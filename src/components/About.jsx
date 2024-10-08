@@ -10,9 +10,12 @@ return (
         <div className="img"></div>
 
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fuga nostrum quod sed consequatur commodi culpa mollitia, expedita corporis illo.</p>
-        <div className="skill-container">
+        <div className="skills">
 
-            <h2>Developer</h2>
+        <h2>Developer</h2>
+
+        <div className="skill-container developer-container">
+
             <div className="skill"></div>
             <div className="skill"></div>
             <div className="skill"></div>
@@ -23,12 +26,19 @@ return (
             <div className="skill"></div>
             <div className="skill"></div>
 
-            <h2>Designer</h2>
+        </div>
+
+        <h2>Designer</h2>
+
+        <div className="skill-container designer-container">
+
             <div className="skill"></div>
             <div className="skill"></div>
             <div className="skill"></div>
             <div className="skill"></div>
             
+        </div>
+
         </div>
     </section>
 
