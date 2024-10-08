@@ -5,13 +5,16 @@
     },
     "works": [
         {
-            "name": "Movie Database"
+            "name": "Movie Database",
+            "overview": "overview text"
         },
         {
-            "name": "Javascript Game"
+            "name": "Javascript Game",
+            "overview": "overview text"
         },
         {
-            "name": "Random Project"
+            "name": "Random Project",
+            "overview": "overview text"
         }
     ]
 }
