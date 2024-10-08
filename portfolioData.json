@@ -1,0 +1,17 @@
+{
+    "about": {
+        "name": "JM Hore",
+        "title": "Front-End Web Developer and Designer"
+    },
+    "works": [
+        {
+            "name": "Movie Database"
+        },
+        {
+            "name": "Javascript Game"
+        },
+        {
+            "name": "Random Project"
+        }
+    ]
+}

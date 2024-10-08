@@ -1,0 +1,18 @@
+// global
+
+@use "./nav";
+@use "./normalize";
+@use "./base";
+
+// intro
+
+@use "./sections/intro/introTexts";
+
+// works
+@use "./sections/works/works";
+
+// about
+@use "./sections/about/about";
+
+// footer
+@use "./sections/footer/footer";

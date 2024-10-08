@@ -1,0 +1,13 @@
+
+.works-container {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2,
+    h3 {
+        color: white;
+    }
+}

@@ -1,0 +1,30 @@
+footer {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-logo {
+        width: 100px;
+        height: 100px;
+        background-color: red;  
+    }
+
+    .socials-container {
+        display: flex;
+    }
+
+    .socials {
+        width: 50px;
+        height: 25px;
+        border-radius: 50rem;
+        background-color: blue;
+        margin: 0.5rem;
+    }
+}
