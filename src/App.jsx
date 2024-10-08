@@ -1,11 +1,8 @@
 import { useState } from 'react';
+import React from "react";
 
 // components
-import Intro from './components/Intro';
-import Nav from './components/Nav';
-import Works from './components/Works';
-import About from './components/About';
-import Footer from './components/Footer';
+import AppRouter from './routers/AppRouter';
 
 // styles & scripts
 import "./styles/styles.css";
@@ -14,16 +11,13 @@ import ParticlesComponent from "./components/Particles";
 function App() {
 
   return (
-    <>
+      <>
 
-      {/* < ParticlesComponent id="particles" /> */}
-      < Nav />
-      < Intro />
-      < Works />
-      < About />
-      < Footer />
-      
-    </>
+      < AppRouter />
+
+      </>
+
+
   )
 }
 

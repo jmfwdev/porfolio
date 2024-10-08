@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
 function Works() {
 
@@ -31,6 +32,12 @@ function Works() {
                     <div className='image'></div>
                     <h3>{work.name}</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, hic quisquam. Animi perferendis, quidem quasi et odio reprehenderit quam. Rem.</p>
+
+                    <Link to={`/works/${work.id}`}>
+
+                    <p>Read More</p>
+                    
+                    </Link>
                 </article>
             ))}
         </div>

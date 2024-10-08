@@ -378,6 +378,15 @@ html {
   color: white;
 }
 
+.indiv-works .home-nav {
+  color: white;
+  text-align: right;
+}
+.indiv-works .work-details h1 {
+  color: white;
+  text-align: center;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;

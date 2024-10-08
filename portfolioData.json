@@ -6,15 +6,18 @@
     "works": [
         {
             "name": "Movie Database",
-            "overview": "overview text"
+            "overview": "overview text",
+            "id": "movie-database"
         },
         {
             "name": "Javascript Game",
-            "overview": "overview text"
+            "overview": "overview text",
+            "id": "javascript-game"
         },
         {
             "name": "Random Project",
-            "overview": "overview text"
+            "overview": "overview text",
+            "id": "random-project"
         }
     ]
 }
