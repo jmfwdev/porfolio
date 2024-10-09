@@ -2,6 +2,7 @@ import Intro from "../components/Intro";
 import Works from "../components/Works";
 import About from "../components/About";
 import Nav from "../components/Nav";
+import ScrollTop from "../components/ScrollToTopButton";
 
 import React, { useState } from "react";
 
@@ -17,6 +18,7 @@ return (
         <Intro />
         <Works />
         <About />
+        < ScrollTop />
     </main>
   )
   
