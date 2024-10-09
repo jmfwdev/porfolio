@@ -6,17 +6,17 @@
     "works": [
         {
             "name": "Movie Database",
-            "overview": "overview text",
+            "overview": "A movie database built using React JS.",
             "id": "movie-database"
         },
         {
             "name": "Javascript Game",
-            "overview": "overview text",
+            "overview": "Javascript game using Vanilla Javascript.",
             "id": "javascript-game"
         },
         {
-            "name": "Random Project",
-            "overview": "overview text",
+            "name": "Capstone Project",
+            "overview": "Woocommerce website about a fictional company called, Pacific Peak Adventures, selling tour packages available in British Columbia, Canada.",
             "id": "random-project"
         }
     ]
