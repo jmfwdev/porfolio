@@ -464,6 +464,9 @@ h6 {
 .about-container h2 {
   text-align: center;
 }
+.about-container p {
+  margin: 1rem;
+}
 .about-container .img {
   width: 200px;
   height: 300px;
