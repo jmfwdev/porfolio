@@ -412,6 +412,9 @@ html {
 .about-container p {
   color: white;
 }
+.about-container h2 {
+  text-align: center;
+}
 .about-container .img {
   width: 200px;
   height: 300px;

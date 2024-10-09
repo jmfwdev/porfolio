@@ -29,7 +29,7 @@ return (
 
         <div className="skills">
 
-            <h2>Developer</h2>
+            <h2>Developing Tools</h2>
 
                 <div className="skill-container developer-container">
 
@@ -45,7 +45,7 @@ return (
 
                 </div>
 
-            <h2>Designer</h2>
+            <h2>Designing Tools</h2>
 
                 <div className="skill-container designer-container">
 
