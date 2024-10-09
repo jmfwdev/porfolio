@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import github from '../assets/icons/github.svg';
 import linkedin from '../assets/icons/linkedin.svg';
+import logo from '../assets/icons/logo.svg';
 
 function Footer () {
 
@@ -26,7 +27,7 @@ function Footer () {
 
         <>
         <footer id="contact">
-            <div className="footer-logo"></div>
+            <img className="footer-logo" src={logo} alt="" />
 
             <h2>Contact Me</h2>
 
