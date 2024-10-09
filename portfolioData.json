@@ -1,8 +1,9 @@
 {
     "about": {
         "name": "JM Hore",
-        "title": "Front-End Web Developer and Designer"
-    },
+        "title": "Front-End Web Developer and Designer",
+        "description": "Hello, my name is JM Hore. I am a junior Front-End Web developer part-time gamer."
+        },
     "works": [
         {
             "name": "Movie Database",

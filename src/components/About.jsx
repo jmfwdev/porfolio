@@ -12,9 +12,28 @@ import illustrator from "../assets/icons/illustrator.svg";
 import xd from "../assets/icons/xd.svg";
 import figma from "../assets/icons/figma.svg";
 
+import React, { useEffect, useState } from 'react';
+
+
 
 
 function About () {
+    const [portfolioData, setPortfolioData] = useState(null);
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+          const response = await fetch('/portfolioData.json');
+          const data = await response.json();
+          setPortfolioData(data);
+        };
+    
+        fetchData();
+      }, []);
+    
+      if (!portfolioData) {
+        return <div>Loading...</div>;
+      }
 
 return (
     
@@ -25,7 +44,7 @@ return (
 
         <div className="img"></div>
 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fuga nostrum quod sed consequatur commodi culpa mollitia, expedita corporis illo.</p>
+        <p>{portfolioData.about.description}</p>
 
         <div className="skills">
 
