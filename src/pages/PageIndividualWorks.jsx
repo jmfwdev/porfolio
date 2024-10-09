@@ -35,6 +35,7 @@ function WorksPage() {
         </Link>
         <div className="work-details">
             <h1>{work.name}</h1>
+            <p>{work.overview}</p>
         </div>
 
         </main>

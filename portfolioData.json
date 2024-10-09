@@ -8,7 +8,26 @@
         {
             "name": "Movie Database",
             "overview": "A movie database built using React JS.",
-            "id": "movie-database"
+            "id": "movie-database",
+            "technologies-coding": [
+                {
+                    "name": "React JS"
+                },
+                {
+                    "name": "Sass"
+                },
+                {
+                    "name": "TMDB API"
+                }
+            ],
+            "technologies-designing": [
+                {
+                    "name": "Adobe XD"
+                },
+                {
+                    "name": "Adobe Illustrator"
+                }
+            ]
         },
         {
             "name": "Javascript Game",
