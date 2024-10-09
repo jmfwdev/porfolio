@@ -29,13 +29,12 @@ function Works() {
             <h2>WORKS</h2>
             {portfolioData.works.map ((work) => (
                 <article className={work.name} key={work.name}>
-                    <div className='image'></div>
                     <h3>{work.name}</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, hic quisquam. Animi perferendis, quidem quasi et odio reprehenderit quam. Rem.</p>
+                    <p>{work.overview}</p>
 
                     <Link to={`/works/${work.id}`}>
 
-                    <p>Read More</p>
+                    <p className='button read-more'>Read More</p>
                     
                     </Link>
                 </article>

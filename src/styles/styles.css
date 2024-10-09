@@ -368,14 +368,30 @@ html {
 .works-container h3 {
   color: white;
 }
-.works-container .image {
-  width: 250px;
-  height: 200px;
-  background-color: white;
-  margin: 0 auto;
+.works-container article {
+  text-align: center;
+  margin: 5rem;
+  border: solid 3px #eee;
+  width: 300px;
+  height: auto;
+  padding: 1rem;
 }
 .works-container article p {
   color: white;
+}
+.works-container .read-more {
+  width: 8rem;
+  height: 2rem;
+  margin: 2rem auto;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rem;
+}
+.works-container a {
+  text-decoration: none;
 }
 
 .indiv-works .home-nav {
@@ -406,11 +422,18 @@ html {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.about-container .skill-container img {
+  width: 50px;
+  height: auto;
+}
 .about-container .skill {
   width: 100px;
   height: 50px;
   background-color: white;
   border-radius: 50rem;
+  margin: 1rem;
+}
+.about-container img {
   margin: 1rem;
 }
 

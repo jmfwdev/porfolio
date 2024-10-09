@@ -11,14 +11,33 @@
         color: white;
     }
 
-    .image {
-        width: 250px;
-        height: 200px;
-        background-color: white;
-        margin: 0 auto;
+    article {
+
+        text-align: center;
+        margin: 5rem;
+        border: solid 3px #eee;
+        width: 300px;
+        height: auto;
+        padding: 1rem;
+
+        p {
+            color: white
+        };
     }
 
-    article p {
-        color: white;
+    .read-more {
+        width: 8rem;
+        height: 2rem;
+        margin: 2rem auto;
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50rem;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
