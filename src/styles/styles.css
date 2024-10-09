@@ -332,6 +332,15 @@ html {
   background-color: rgb(20, 20, 20);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 10px 10px 10px black;
+}
+
 .intro {
   width: 100vw;
   height: 100vh;
@@ -352,27 +361,29 @@ html {
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.5));
   -webkit-background-clip: text;
   color: transparent;
+  text-shadow: none;
 }
 .intro .about {
   color: white;
 }
 
 .works-container {
-  margin: 0 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .works-container h2,
 .works-container h3 {
   color: white;
 }
-.works-container article {
+.works-container h2 {
   text-align: center;
+}
+.works-container article {
   margin: 5rem;
-  border: solid 3px #eee;
-  width: 300px;
+  width: 80%;
+  background-color: rgb(28, 28, 28);
+  max-width: 31.25rem;
   height: auto;
   padding: 1rem;
 }

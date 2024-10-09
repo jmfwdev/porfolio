@@ -1,22 +1,24 @@
 
 .works-container {
-    margin: 0 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     h2,
     h3 {
         color: white;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     article {
 
-        text-align: center;
         margin: 5rem;
-        border: solid 3px #eee;
-        width: 300px;
+        width: 80%;
+        background-color: rgb(28, 28, 28);
+        max-width: 31.25rem;
         height: auto;
         padding: 1rem;
 
