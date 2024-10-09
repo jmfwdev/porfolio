@@ -1,4 +1,24 @@
+import React, { useEffect, useState } from 'react';
+import arrowDown from "../assets/icons/arrow-down.svg";
+
 function Footer () {
+
+    const [portfolioData, setPortfolioData] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+          const response = await fetch('/portfolioData.json');
+          const data = await response.json();
+          setPortfolioData(data);
+        };
+    
+        fetchData();
+      }, []);
+
+      if (!portfolioData) {
+        return <div>Loading...</div>;
+      }
+
 
     return (
 
@@ -8,10 +28,14 @@ function Footer () {
 
             <h2>Contact Me</h2>
 
-            <ul>
-                <li>contact-1</li>
-                <li>contact-2</li>
-                <li>contact-3</li>
+            <ul className='contact-list'>
+
+            {portfolioData.contacts.map ((contact) => (
+                <li>
+                    {contact.content}
+                </li>
+            ))}
+
             </ul>
             <div className="socials-container">
                 <div className="socials"></div>
@@ -19,9 +43,8 @@ function Footer () {
                 <div className="socials"></div>
             </div>
 
-            <p><a href="#">Back to Top</a></p>
-            <p>JM Hore FWD &copy; 2024</p>
         </footer>
+            <p className="copyright">JM Hore FWD &copy; 2024</p>
         </>
 
     )

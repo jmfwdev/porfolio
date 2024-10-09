@@ -1,5 +1,6 @@
 .mobile-nav {
   position: fixed;
+  z-index: 9999;
 }
 
 .dropdown-menu ul {
@@ -348,6 +349,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .intro h1 {
   color: white;
@@ -365,6 +367,24 @@ h6 {
 }
 .intro .about {
   color: white;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px); /* Adjust the height of the bounce */
+  }
+  60% {
+    transform: translateY(-15px); /* Adjust the height of the bounce */
+  }
+}
+.intro .arrow-down {
+  width: 8rem;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  animation: bounce 2s ease-in-out infinite;
 }
 
 .works-container {
@@ -451,11 +471,12 @@ h6 {
 }
 
 footer {
-  background-color: #eee;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 4rem;
+  color: white;
+  border-top: 2px solid white;
 }
 footer ul {
   list-style: none;
@@ -464,7 +485,7 @@ footer ul {
 footer .footer-logo {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: white;
 }
 footer .socials-container {
   display: flex;
@@ -473,8 +494,16 @@ footer .socials {
   width: 50px;
   height: 25px;
   border-radius: 50rem;
-  background-color: blue;
+  background-color: white;
   margin: 0.5rem;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  border-top: solid 1px rgb(10, 10, 10);
+  padding: 1rem;
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

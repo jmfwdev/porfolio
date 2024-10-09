@@ -20,5 +20,11 @@
             "overview": "Woocommerce website about a fictional company called, Pacific Peak Adventures, selling tour packages available in British Columbia, Canada.",
             "id": "random-project"
         }
+    ],
+    "contacts": [
+        {
+            "name": "email",
+            "content": "jm.hore31@gmail.com"
+        }
     ]
 }

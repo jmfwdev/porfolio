@@ -1,12 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { Link } from "react-router-dom";
-function Nav({scroll}) {
+function Nav() {
     const [isOpen, setIsOpen] = useState(false);
     const [position, setPosition] = useState({ top: 650, left: 10 }); // Initial position
     const menuRef = useRef(null);
     const isDragging = useRef(false);
-
-    const animationPlayState = scroll > 0 ? 'running' : 'paused';
 
     function toggleMenu () {
         setIsOpen(!isOpen);

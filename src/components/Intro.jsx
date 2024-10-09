@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import arrowDown from "../assets/icons/arrow-down.svg";
 
     function Intro() {
         const [portfolioData, setPortfolioData] = useState(null);
@@ -23,6 +24,7 @@ import React, { useEffect, useState } from 'react';
           <div className='intro' id='#'>
             <h1>{portfolioData.about.name}</h1>
             <p className='about'>{portfolioData.about.title}</p>
+            <img className="arrow-down" src={arrowDown} alt="" />
           </div>
 
         </>
