@@ -13,10 +13,10 @@ function PageHome () {
 return (
 
     <main>
-      <Nav />
-      <Intro />
-      <Works />
-      <About />
+        <Nav />
+        <Intro />
+        <Works />
+        <About />
     </main>
   )
   

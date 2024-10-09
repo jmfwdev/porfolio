@@ -382,7 +382,6 @@ h6 {
 .works-container article {
   margin: 5rem;
   width: 80%;
-  background-color: rgb(28, 28, 28);
   max-width: 31.25rem;
   height: auto;
   padding: 1rem;
@@ -433,7 +432,7 @@ h6 {
 }
 .about-container .skill-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .about-container .skill-container img {
