@@ -509,15 +509,10 @@ footer .footer-logo {
   height: 100px;
   background-color: white;
 }
-footer .socials-container {
-  display: flex;
-}
-footer .socials {
-  width: 50px;
-  height: 25px;
-  border-radius: 50rem;
-  background-color: white;
-  margin: 0.5rem;
+footer .socials-container img {
+  width: 2rem;
+  height: auto;
+  margin: 1rem;
 }
 
 .copyright {

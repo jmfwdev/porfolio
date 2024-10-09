@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import arrowDown from "../assets/icons/arrow-down.svg";
+
+import github from '../assets/icons/github.svg';
+import linkedin from '../assets/icons/linkedin.svg';
 
 function Footer () {
 
@@ -38,9 +40,15 @@ function Footer () {
 
             </ul>
             <div className="socials-container">
-                <div className="socials"></div>
-                <div className="socials"></div>
-                <div className="socials"></div>
+
+                <a href="https://github.com/jmfwdev">
+                    <img src={github} alt="" />
+                </a>
+
+                <a href="">
+                    <img src={linkedin} alt="" />
+                </a>
+
             </div>
 
         </footer>
