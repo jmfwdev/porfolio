@@ -9,7 +9,7 @@
             "name": "Movie Database",
             "overview": "A movie database built using React JS.",
             "id": "movie-database",
-            "technologies-coding": [
+            "coding": [
                 {
                     "name": "React JS"
                 },
@@ -20,7 +20,7 @@
                     "name": "TMDB API"
                 }
             ],
-            "technologies-designing": [
+            "designing": [
                 {
                     "name": "Adobe XD"
                 },

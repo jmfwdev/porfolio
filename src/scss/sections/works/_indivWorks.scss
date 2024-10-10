@@ -1,4 +1,7 @@
 .indiv-works {
+
+    height: 70vh;
+    width: 100vw;
     .home-nav {
         color: white;
         text-align: right;
@@ -11,4 +14,33 @@
         }
     }
 
+    .tabs-container {
+        color: white;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 62.5rem;
+    }
+
+    .tab-nav {
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .tabs {
+        background-color: white;
+        color: black;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .overview.hide,
+    .technology.hide {
+        display: none;
+    }
 }

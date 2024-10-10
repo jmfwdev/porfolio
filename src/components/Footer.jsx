@@ -34,7 +34,7 @@ function Footer () {
             <ul className='contact-list'>
 
             {portfolioData.contacts.map ((contact) => (
-                <li>
+                <li key={contact.content}>
                     {contact.content}
                 </li>
             ))}

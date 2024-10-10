@@ -443,6 +443,10 @@ h6 {
   text-decoration: none;
 }
 
+.indiv-works {
+  height: 70vh;
+  width: 100vw;
+}
 .indiv-works .home-nav {
   color: white;
   text-align: right;
@@ -451,6 +455,31 @@ h6 {
 .indiv-works .work-details p {
   color: white;
   text-align: center;
+}
+.indiv-works .tabs-container {
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 62.5rem;
+}
+.indiv-works .tab-nav {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+}
+.indiv-works ul {
+  list-style-type: none;
+}
+.indiv-works .tabs {
+  background-color: white;
+  color: black;
+  margin: 1rem;
+  padding: 1rem;
+}
+.indiv-works .overview.hide,
+.indiv-works .technology.hide {
+  display: none;
 }
 
 .about-container {

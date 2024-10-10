@@ -35,7 +35,27 @@ function WorksPage() {
         </Link>
         <div className="work-details">
             <h1>{work.name}</h1>
-            <p>{work.overview}</p>
+        </div>
+
+        <div className="tabs-container">
+            <ul className='tab-nav'>
+                <li className="tabs">Overview</li>
+                <li className="tabs">Techs</li>
+                <li className="tabs">Visit the site!</li>
+                <li className="tabs">Github</li>
+            </ul>
+
+            <section className="overview hide">
+                <p>{work.overview}</p>
+            </section>
+
+            <section className="technology hide">
+
+                {work.coding.map ((tech) => (
+                    <p key={tech.name}>{tech.name}</p>
+                ))}
+
+            </section>
         </div>
 
         </main>
