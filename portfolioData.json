@@ -6,6 +6,11 @@
         },
     "works": [
         {
+            "name": "Portfolio",
+            "overview": "My portfolio piece more in-depth.",
+            "id": "portfolio"
+        },
+        {
             "name": "Movie Database",
             "overview": "A movie database built using React JS.",
             "id": "movie-database",
@@ -28,11 +33,6 @@
                     "name": "Adobe Illustrator"
                 }
             ]
-        },
-        {
-            "name": "Javascript Game",
-            "overview": "Javascript game using Vanilla Javascript.",
-            "id": "javascript-game"
         },
         {
             "name": "Capstone Project",
