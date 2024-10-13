@@ -41,7 +41,7 @@ function WorksPage() {
             <ul className='tab-nav'>
                 <li className="tabs">Overview</li>
                 <li className="tabs">Techs</li>
-                <li className="tabs">Visit the site!</li>
+                <li className="tabs"><a href={work.url}>Visit the site!</a></li>
                 <li className="tabs">Github</li>
             </ul>
 
