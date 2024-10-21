@@ -1,10 +1,12 @@
 // mobile nav
 
-  
 .mobile-nav {
     position: fixed;
     z-index: 9999;
+}
 
+.menu-container {
+    position: relative;
 }
 
 // dropdown menu
@@ -12,8 +14,12 @@
 .dropdown-menu {
     // display: none;
 
+
+    text-align: center;
     ul {
         list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
 
     a,
@@ -21,6 +27,71 @@
         text-decoration: none;
         color: white;
     }
+}
+
+.menu-icon {
+    z-index: 10;
+}
+
+.dropdown-menu.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+
+    ul {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        li {
+            position: absolute;
+        }
+
+        .home {
+            right: 0;
+        }
+        
+        .works {
+            right: 0;
+            top: 2.5rem;
+        }
+
+        .about {
+            bottom: 1.5rem;
+            right: 2rem;
+        }
+
+        .contact {
+            bottom: 0;
+        }
+
+    }
+}
+
+.dropdown-menu.top-middle {
+
+}
+
+.dropdown-menu.top-right {
+
+}
+
+.dropdown-menu.middle {
+
+}
+
+.dropdown-menu.bottom-middle {
+
+}
+
+.dropdown-menu.bottom-left {
+
+}
+
+.dropdown-menu.bottom-right {
+
 }
 
 // menu icon
