@@ -23,7 +23,8 @@
                     "name": "Custom JSON File"
                 }
             ],
-            "backdrop": false
+            "backdrop": false,
+            "available": true
         },
         {
             "name": "Movie Database",
@@ -49,12 +50,15 @@
                     "name": "Adobe Illustrator"
                 }
             ],
-            "backdrop": true
+            "backdrop": true,
+            "available": true
         },
         {
             "name": "Capstone Project",
             "overview": "Woocommerce website about a fictional company called, Pacific Peak Adventures, selling tour packages available in British Columbia, Canada.",
-            "id": "random-project"
+            "id": "random-project",
+            "backdrop": false,
+            "available": false
         }
     ],
     "contacts": [

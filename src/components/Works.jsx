@@ -31,17 +31,15 @@ function Works() {
             {portfolioData.works.map ((work) => (
               <article className={`${work.name} works-article`} key={work.name}>
 
-                  <ScrollAnimation animateIn='fadeIn'>
-
                     {work.backdrop && (
+                      <ScrollAnimation animateIn='fadeIn'>
                         <img
                             src={`../../src/assets/images/${work.id}.png`}
                             alt={work.name}
                             className={`work-image ${work.id}`}
                         />
+                      </ScrollAnimation>
                     )}
-
-                  </ScrollAnimation>
 
                   <ScrollAnimation animateIn='fadeInLeft'>
 
@@ -50,16 +48,18 @@ function Works() {
 
 
                   </ScrollAnimation>
+                  
+                  {work.available ? (
+                    <ScrollAnimation animateIn='fadeIn'>
 
-                  <ScrollAnimation animateIn='fadeIn'>
+                      <Link to={`/works/${work.id}`}>
+                        <p className='button read-more'>Read More</p>
+                      </Link>
 
-                    <Link to={`/works/${work.id}`}>
-
-                    <p className='button read-more'>Read More</p>
-                    
-                    </Link>
-
-                  </ScrollAnimation>
+                    </ScrollAnimation>
+                  ) : (
+                    <p className='button'>Coming Soon!</p>
+                  )}
                 </article>
             ))}
         </div>

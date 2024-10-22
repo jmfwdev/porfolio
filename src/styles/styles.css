@@ -664,6 +664,7 @@ h6 {
 .works-container article p {
   color: white;
 }
+.works-container .button,
 .works-container .read-more {
   width: 8rem;
   height: 2rem;
