@@ -46,7 +46,7 @@ function Footer () {
                     <img src={github} alt="" />
                 </a>
 
-                <a href="">
+                <a href="https://www.linkedin.com/in/jan-marc-hore-724335332">
                     <img src={linkedin} alt="" />
                 </a>
 
