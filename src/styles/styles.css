@@ -870,7 +870,7 @@ footer {
   flex-direction: column;
   padding: 4rem;
   color: white;
-  border-top: 2px solid white;
+  border-top: 1px solid #eee;
 }
 footer ul {
   list-style: none;
