@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Nav() {
     const [isOpen, setIsOpen] = useState(false);
-    const [position, setPosition] = useState({ top: 650, left: 10 }); // Initial position
+    const [position, setPosition] = useState({ top: 100, left: 10 }); // Initial position
     const [dropdownClass, setDropdownClass] = useState('');
     const menuRef = useRef(null);
     const isDragging = useRef(false);
