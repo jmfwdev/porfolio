@@ -353,3 +353,79 @@
     }
 
 }
+
+.desktop-nav {
+    position: fixed;
+    right: 1rem;
+    top: 30%;
+    z-index: 9999;
+
+    nav {
+        text-align: center;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 20rem;
+            li {
+                margin: 1rem;
+                a {
+                    background-color: red;
+                    text-decoration: none;
+                    width: 70px;
+                    height: 2rem;
+                    display: flex;
+                    color: white;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+// media query to get rid mobile nav when over 800px viewport width
+@media (min-width: 50rem) {
+
+    .dropdown-menu.top-left,
+    .dropdown-menu.top-middle,
+    .dropdown-menu.top-right,
+    .dropdown-menu.bottom-left,
+    .dropdown-menu.bottom-middle,
+    .dropdown-menu.bottom-right {
+        ul {
+            .home {
+                animation: unset;
+            }
+            
+            .works {
+                animation: unset;
+            }
+    
+            .about {
+                animation: unset;
+            }
+    
+            .contact {
+                animation: unset;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        position: fixed;
+        ul {
+            position: unset;
+            li {
+                position: unset;
+            }
+        }
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}

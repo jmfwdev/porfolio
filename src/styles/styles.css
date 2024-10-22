@@ -253,6 +253,84 @@
   animation: bottom-right-contact 0.5s forwards;
 }
 
+.desktop-nav {
+  position: fixed;
+  right: 1rem;
+  top: 30%;
+  z-index: 9999;
+}
+.desktop-nav nav {
+  text-align: center;
+}
+.desktop-nav nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20rem;
+}
+.desktop-nav nav ul li {
+  margin: 1rem;
+}
+.desktop-nav nav ul li a {
+  background-color: red;
+  text-decoration: none;
+  width: 70px;
+  height: 2rem;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 50rem) {
+  .dropdown-menu.top-left ul .home,
+  .dropdown-menu.top-middle ul .home,
+  .dropdown-menu.top-right ul .home,
+  .dropdown-menu.bottom-left ul .home,
+  .dropdown-menu.bottom-middle ul .home,
+  .dropdown-menu.bottom-right ul .home {
+    animation: unset;
+  }
+  .dropdown-menu.top-left ul .works,
+  .dropdown-menu.top-middle ul .works,
+  .dropdown-menu.top-right ul .works,
+  .dropdown-menu.bottom-left ul .works,
+  .dropdown-menu.bottom-middle ul .works,
+  .dropdown-menu.bottom-right ul .works {
+    animation: unset;
+  }
+  .dropdown-menu.top-left ul .about,
+  .dropdown-menu.top-middle ul .about,
+  .dropdown-menu.top-right ul .about,
+  .dropdown-menu.bottom-left ul .about,
+  .dropdown-menu.bottom-middle ul .about,
+  .dropdown-menu.bottom-right ul .about {
+    animation: unset;
+  }
+  .dropdown-menu.top-left ul .contact,
+  .dropdown-menu.top-middle ul .contact,
+  .dropdown-menu.top-right ul .contact,
+  .dropdown-menu.bottom-left ul .contact,
+  .dropdown-menu.bottom-middle ul .contact,
+  .dropdown-menu.bottom-right ul .contact {
+    animation: unset;
+  }
+  .dropdown-menu {
+    position: fixed;
+  }
+  .dropdown-menu ul {
+    position: unset;
+  }
+  .dropdown-menu ul li {
+    position: unset;
+  }
+  .menu-icon {
+    display: none;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

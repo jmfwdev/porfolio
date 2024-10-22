@@ -2,14 +2,16 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 function Nav() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(window.innerWidth < 800); // Default to open only if less than 800px
     const [position, setPosition] = useState({ top: 100, left: 10 }); // Initial position
     const [dropdownClass, setDropdownClass] = useState('');
     const menuRef = useRef(null);
     const isDragging = useRef(false);
 
     function toggleMenu() {
-        setIsOpen(!isOpen);
+        if (window.innerWidth < 800) {
+            setIsOpen(!isOpen);
+        }
     }
 
     // Function to determine dropdown class based on position
@@ -45,6 +47,9 @@ function Nav() {
     }, [isOpen, position]);
 
     const handleTouchStart = (e) => {
+        // Disable dragging if viewport width is 800px or more
+        if (window.innerWidth >= 800) return;
+
         const touch = e.touches[0];
         const offsetX = touch.clientX - position.left;
         const offsetY = touch.clientY - position.top;
@@ -83,36 +88,63 @@ function Nav() {
         window.addEventListener('touchend', handleTouchEnd);
     };
 
+    // Update menu state on window resize
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 800) {
+                setIsOpen(true); // Keep menu open
+            } else {
+                setIsOpen(false); // Default to closed
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <>
-            <div    
-                className='mobile-nav'
-                ref={menuRef}
-                style={{ top: position.top, left: position.left, position: 'fixed' }}
-                onTouchStart={handleTouchStart}
-            >
-                <div className='menu-container'>
-                    <div className='menu-icon' onClick={toggleMenu}>
-                        <div className='circle'></div>
-                    </div>
-
-                    {isOpen && (
-                        <nav className={`dropdown-menu ${dropdownClass}`}>
-                            <ul>
-                                <li className='home'>
-                                    <Link to="/">Home</Link>
-                                </li>
-                                <li className='works'><a href="#works">Works</a></li>
-                                <li className='about'><a href="#about">About</a></li>
-                                <li className='contact'><a href="#contact">Contact</a></li>
-                            </ul>
-                        </nav>
-                    )}
+            {window.innerWidth >= 800 ? (
+                <div className='desktop-nav'>
+                    {/* Desktop Navigation */}
+                    <nav>
+                        <ul>
+                            <li className='home'><a href="#">Home</a></li>
+                            <li className='works'><a href="#works">Works</a></li>
+                            <li className='about'><a href="#about">About</a></li>
+                            <li className='contact'><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
+            ) : (
+                <div    
+                    className='mobile-nav'
+                    ref={menuRef}
+                    style={{ top: position.top, left: position.left, position: 'fixed' }}
+                    onTouchStart={handleTouchStart}
+                >
+                    <div className='menu-container'>
+                        <div className='menu-icon' onClick={toggleMenu}>
+                            <div className='circle'></div>
+                        </div>
+
+                        {isOpen && (
+                            <nav className={`dropdown-menu ${dropdownClass}`}>
+                                <ul>
+                                    <li className='home'><a href="#">Home</a></li>
+                                    <li className='works'><a href="#works">Works</a></li>
+                                    <li className='about'><a href="#about">About</a></li>
+                                    <li className='contact'><a href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        )}
+                    </div>
+                </div>
+            )}
         </>
     );
 }
 
 export default Nav;
-
