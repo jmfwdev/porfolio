@@ -23,7 +23,7 @@
                     "name": "Custom JSON File"
                 }
             ],
-            "backdrop": false,
+            "backdrop": true,
             "available": true
         },
         {

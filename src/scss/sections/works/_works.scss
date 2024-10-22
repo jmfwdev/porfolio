@@ -13,10 +13,6 @@
         text-align: center;
     }
 
-    .works-article {
-        position: relative;
-    }
-
     article {
 
         margin: 5rem;
@@ -57,5 +53,6 @@
         object-fit: cover;
         z-index: -1;
         filter: blur(.05rem) brightness(.3);
+        box-shadow: 5px 5px 15px #000;
     }
 }

@@ -651,9 +651,6 @@ h6 {
 .works-container h2 {
   text-align: center;
 }
-.works-container .works-article {
-  position: relative;
-}
 .works-container article {
   margin: 5rem;
   width: 80%;
@@ -688,6 +685,7 @@ h6 {
   object-fit: cover;
   z-index: -1;
   filter: blur(0.05rem) brightness(0.3);
+  box-shadow: 5px 5px 15px #000;
 }
 
 .indiv-works {
