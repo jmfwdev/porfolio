@@ -29,11 +29,25 @@ function Works() {
         <div className="works-container" id="works">
             <h2>WORKS</h2>
             {portfolioData.works.map ((work) => (
-              <article className={work.name} key={work.name}>
+              <article className={`${work.name} works-article`} key={work.name}>
+
+                  <ScrollAnimation animateIn='fadeIn'>
+
+                    {work.backdrop && (
+                        <img
+                            src={`../../src/assets/images/${work.id}.png`}
+                            alt={work.name}
+                            className={`work-image ${work.id}`}
+                        />
+                    )}
+
+                  </ScrollAnimation>
+
                   <ScrollAnimation animateIn='fadeInLeft'>
 
                     <h3>{work.name}</h3>
                     <p>{work.overview}</p>
+
 
                   </ScrollAnimation>
 
