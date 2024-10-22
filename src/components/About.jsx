@@ -42,7 +42,10 @@ return (
     <section className="about-container" id="about">
         <h2>About me</h2>
 
-        <div className="img"></div>
+        <img    src="../../src/assets/images/portfolio-image.jpeg" 
+                alt="JM's picture"
+                className="img"
+        />
 
         <p>{portfolioData.about.description}</p>
 

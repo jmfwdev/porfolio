@@ -744,8 +744,8 @@ h6 {
 }
 .about-container .img {
   width: 200px;
-  height: 300px;
-  background-color: white;
+  height: auto;
+  box-shadow: 5px 5px 15px #000;
 }
 .about-container .skill-container {
   display: flex;
