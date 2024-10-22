@@ -7,8 +7,23 @@
     "works": [
         {
             "name": "Portfolio",
-            "overview": "My portfolio piece more in-depth.",
-            "id": "portfolio"
+            "overview": "Portfolio built primarly using React JS featuring different works and technology",
+            "id": "portfolio",
+            "coding": [
+                {
+                    "name": "React JS"
+                },
+                {
+                    "name": "Sass"
+                },
+                {
+                    "name": "Animation.css"
+                },
+                {
+                    "name": "Custom JSON File"
+                }
+            ],
+            "backdrop": false
         },
         {
             "name": "Movie Database",
@@ -33,7 +48,8 @@
                 {
                     "name": "Adobe Illustrator"
                 }
-            ]
+            ],
+            "backdrop": true
         },
         {
             "name": "Capstone Project",
