@@ -647,15 +647,11 @@ h6 {
 .works-container h2,
 .works-container h3 {
   color: white;
-}
-.works-container h2 {
   text-align: center;
 }
 .works-container article {
-  margin: 5rem;
-  width: 80%;
+  margin: 5rem auto;
   max-width: 31.25rem;
-  height: auto;
   padding: 1rem;
 }
 .works-container article p {
@@ -666,15 +662,22 @@ h6 {
   width: 8rem;
   height: 2rem;
   margin: 2rem auto;
-  background-color: white;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(50, 0, 0);
+  padding: 1rem;
   border-radius: 50rem;
+  box-shadow: 0px 5px 10px #000;
+  color: white;
 }
 .works-container a {
   text-decoration: none;
+}
+.works-container .works-link {
+  width: 80%;
+  max-width: 31.25rem;
 }
 .works-container .work-image {
   position: absolute;
@@ -689,7 +692,6 @@ h6 {
 }
 
 .indiv-works {
-  height: 70vh;
   width: 100vw;
 }
 .indiv-works .home-nav {
@@ -703,7 +705,7 @@ h6 {
 }
 .indiv-works .tabs-container {
   color: white;
-  margin: 0 auto;
+  margin: 5rem auto;
   width: 100%;
   max-width: 62.5rem;
 }
@@ -712,15 +714,31 @@ h6 {
   margin: 0 auto;
   padding: 0;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40rem;
+  align-items: center;
+  text-align: center;
+}
+.indiv-works .coding-tech-title,
+.indiv-works .design-tech-title {
+  font-size: 1.5rem;
 }
 .indiv-works ul {
   list-style-type: none;
+  padding: 0;
 }
 .indiv-works .tabs {
-  background-color: white;
-  color: black;
+  background-color: rgb(50, 0, 0);
   margin: 1rem;
   padding: 1rem;
+  border-radius: 50rem;
+  box-shadow: 0px 5px 10px #000;
+  width: 10rem;
+}
+.indiv-works .tabs a {
+  color: white;
+  text-decoration: none;
 }
 .indiv-works .overview.hide,
 .indiv-works .technology.hide {
@@ -731,6 +749,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5rem 0;
 }
 .about-container h2,
 .about-container p {

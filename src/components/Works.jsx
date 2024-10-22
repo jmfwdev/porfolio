@@ -21,8 +21,6 @@ function Works() {
         return <div>Loading...</div>;
       }
 
-
-
     return (
 
         <>
@@ -30,36 +28,39 @@ function Works() {
             <h2>WORKS</h2>
             {portfolioData.works.map ((work) => (
               <article 
-                  className={work.name} 
+                  className={`${work.name} works-link`}
                   key={work.name}
                   style={{position: "relative"}}>
 
-                    {work.backdrop && (
-                      <ScrollAnimation animateIn='fadeIn'>
-                        <img
-                            src={`../../src/assets/images/${work.id}.png`}
-                            alt={work.name}
-                            className={`work-image ${work.id}`}
-                        />
-                      </ScrollAnimation>
-                    )}
+              <Link 
+                  to={`/works/${work.id}`}
+              >
+                  {work.backdrop && (
+                    <ScrollAnimation animateIn='fadeIn'>
+                      <img
+                          src={`../../src/assets/images/${work.id}.png`}
+                          alt={work.name}
+                          className={`work-image ${work.id}`}
+                      />
+                    </ScrollAnimation>
+                  )}
 
-                  <ScrollAnimation animateIn='fadeInLeft'>
+                <ScrollAnimation animateIn='fadeInLeft'>
 
-                    <h3>{work.name}</h3>
-                    <p>{work.overview}</p>
+                  <h3>{work.name}</h3>
 
+                </ScrollAnimation>
 
-                  </ScrollAnimation>
+              </Link>
                   
                   {work.available ? (
-                    <ScrollAnimation animateIn='fadeIn'>
+                    <Link to={`/works/${work.id}`}>
+                      <ScrollAnimation animateIn='fadeIn'>
 
-                      <Link to={`/works/${work.id}`}>
-                        <p className='button read-more'>Read More</p>
-                      </Link>
+                          <p className='button read-more'>Read More</p>
 
-                    </ScrollAnimation>
+                      </ScrollAnimation>
+                    </Link>
                   ) : (
                     <p className='button'>Coming Soon!</p>
                   )}

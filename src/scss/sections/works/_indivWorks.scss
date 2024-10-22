@@ -1,6 +1,5 @@
 .indiv-works {
 
-    height: 70vh;
     width: 100vw;
     .home-nav {
         color: white;
@@ -16,7 +15,7 @@
 
     .tabs-container {
         color: white;
-        margin: 0 auto;
+        margin: 5rem auto;
         width: 100%;
         max-width: 62.5rem;
     }
@@ -26,17 +25,34 @@
         margin: 0 auto;
         padding: 0;
         justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 40rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .coding-tech-title,
+    .design-tech-title {
+        font-size: 1.5rem;
     }
 
     ul {
         list-style-type: none;
+        padding: 0;
     }
 
     .tabs {
-        background-color: white;
-        color: black;
+        background-color: rgb(50, 0, 0);
         margin: 1rem;
         padding: 1rem;
+        border-radius: 50rem;
+        box-shadow: 0px 5px 10px #000;
+        width: 10rem;
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
 
     .overview.hide,

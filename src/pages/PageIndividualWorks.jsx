@@ -39,9 +39,37 @@ function WorksPage() {
 
         <div className="tabs-container">
             <ul className='tab-nav'>
+
                 <li className="tabs">Overview</li>
+                    <p>{work.overview}</p>
+
                 <li className="tabs">Techs</li>
-                <li className="tabs"><a href={work.url}>Visit the site!</a></li>
+                    {work.coding && (
+                        <div>
+                            <p className='coding-tech-title'>Coding</p>
+                            <ul>
+                                {work.coding.map ((codeTech) => (
+                                    <li>{codeTech.name}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
+                        {work.designing && (
+                        <div>
+                            <p className='design-tech-title'>Designing</p>
+                            <ul>
+                                    {work.designing.map ((designTech) => (
+                                        <li>{designTech.name}</li>
+                                    ))}
+                            </ul>
+                        </div>
+                        )}
+                {work.url && (
+                    <li className="tabs">
+                        <a href={work.url}>Visit the site!</a>
+                    </li>
+                )}
                 <li className="tabs">Github</li>
             </ul>
 
