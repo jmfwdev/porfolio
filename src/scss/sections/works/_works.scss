@@ -46,9 +46,19 @@
         text-decoration: none;
     }
 
+    @keyframes worksHover {
+        100% {
+            transform: scale(1.1);
+        }
+    }
+
     .works-link {
         width: 80%;
         max-width: 31.25rem;
+    }
+
+    .works-link:hover {
+        animation: worksHover 0.5s forwards;
     }
 
     .work-image {

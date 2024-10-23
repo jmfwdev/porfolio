@@ -373,7 +373,7 @@
             li {
                 margin: 1rem;
                 a {
-                    background-color: red;
+                    background-color: rgb(20, 20, 20);
                     text-decoration: none;
                     width: 70px;
                     height: 2rem;
@@ -382,6 +382,22 @@
                     align-items: center;
                     justify-content: center;
                     box-shadow: 5px 5px 15px #000;
+                }
+            }
+        }
+    }
+
+    @keyframes hoverNav {
+        100% {
+            transform: scale(1.2) translateX(-10px);
+        }
+    }
+
+    nav{
+        ul{
+            li{
+                a:hover{
+                    animation: hoverNav 0.5s forwards;
                 }
             }
         }

@@ -276,7 +276,7 @@
   margin: 1rem;
 }
 .desktop-nav nav ul li a {
-  background-color: red;
+  background-color: rgb(20, 20, 20);
   text-decoration: none;
   width: 70px;
   height: 2rem;
@@ -285,6 +285,14 @@
   align-items: center;
   justify-content: center;
   box-shadow: 5px 5px 15px #000;
+}
+@keyframes hoverNav {
+  100% {
+    transform: scale(1.2) translateX(-10px);
+  }
+}
+.desktop-nav nav ul li a:hover {
+  animation: hoverNav 0.5s forwards;
 }
 
 @media (min-width: 50rem) {
@@ -643,7 +651,7 @@ template {
 }
 
 html {
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   font-family: "Lato", sans-serif;
 }
 
@@ -771,9 +779,17 @@ h6 {
 .works-container a {
   text-decoration: none;
 }
+@keyframes worksHover {
+  100% {
+    transform: scale(1.1);
+  }
+}
 .works-container .works-link {
   width: 80%;
   max-width: 31.25rem;
+}
+.works-container .works-link:hover {
+  animation: worksHover 0.5s forwards;
 }
 .works-container .work-image {
   position: absolute;
