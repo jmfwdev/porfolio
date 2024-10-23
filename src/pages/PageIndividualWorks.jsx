@@ -38,6 +38,9 @@ function WorksPage() {
                 alt="Logo" 
             />
         </Link>
+        {work.available ? (
+        <div>
+
         <div className="work-details">
             <h1>{work.name}</h1>
         </div>
@@ -90,6 +93,20 @@ function WorksPage() {
 
             </section>
         </div>
+        </div>
+        ) : (
+            <div>
+                <div className="work-details">
+                    <h1>{work.name}</h1>
+                </div>
+                
+                <p
+                    className='comingSoon'
+                    style={{color: "white", textAlign: "center"}}
+
+                >COMING SOON!</p>
+            </div>
+        )};
 
         </main>
     );
