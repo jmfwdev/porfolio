@@ -1,6 +1,26 @@
 .indiv-works {
-
     width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .indiv-works-logo {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    @keyframes logoHover {
+        100% {
+            transform: scale(1.1);
+        }
+    }
+    .indiv-works-logo:hover {
+        animation: logoHover 0.5s forwards;
+    }
     .home-nav {
         color: white;
         text-align: right;
