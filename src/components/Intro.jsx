@@ -22,7 +22,7 @@ import backgroundImage from "../assets/images/background.png";
     return (
         
         <>
-          <div className='intro' id='#'>
+          <div className='intro' id='home'>
             <img 
               src={backgroundImage} 
               alt="Background Image" 

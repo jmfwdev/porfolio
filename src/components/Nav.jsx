@@ -14,6 +14,16 @@ function Nav() {
         }
     }
 
+    const smoothScroll = (targetId) => {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            });
+        }
+    }
+
     // Function to determine dropdown class based on position
     const determineDropdownClass = () => {
         const { top, left } = position;
@@ -111,10 +121,10 @@ function Nav() {
                     {/* Desktop Navigation */}
                     <nav>
                         <ul>
-                            <li className='home'><a href="#">Home</a></li>
-                            <li className='works'><a href="#works">Works</a></li>
-                            <li className='about'><a href="#about">About</a></li>
-                            <li className='contact'><a href="#contact">Contact</a></li>
+                            <li className='home'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#home'); }}>Home</a></li>
+                            <li className='works'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#works'); }}>Works</a></li>
+                            <li className='about'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#about'); }}>About</a></li>
+                            <li className='contact'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#contact'); }}>Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -133,10 +143,10 @@ function Nav() {
                         {isOpen && (
                             <nav className={`dropdown-menu ${dropdownClass}`}>
                                 <ul>
-                                    <li className='home'><a href="#">Home</a></li>
-                                    <li className='works'><a href="#works">Works</a></li>
-                                    <li className='about'><a href="#about">About</a></li>
-                                    <li className='contact'><a href="#contact">Contact</a></li>
+                                <li className='home'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#home'); }}>Home</a></li>
+                                <li className='works'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#works'); }}>Works</a></li>
+                                <li className='about'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#about'); }}>About</a></li>
+                                <li className='contact'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#contact'); }}>Contact</a></li>
                                 </ul>
                             </nav>
                         )}
