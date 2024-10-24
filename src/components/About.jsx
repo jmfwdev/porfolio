@@ -1,17 +1,3 @@
-import VSCODEimage from "/assets/icons/vscode.svg";
-import html5 from "/assets/icons/html5.svg";
-import css3 from "/assets/icons/css3.svg";
-import sass from "/assets/icons/sass.svg";
-import javascript from "/assets/icons/javascript.svg";
-import react from "assets/icons/react.svg";
-import php from "/assets/icons/php.svg";
-import wordpress from "/assets/icons/wordpress.svg";
-import shopify from "/assets/icons/shopify.svg";
-import photoshop from "/assets/icons/photoshop.svg";
-import illustrator from "/assets/icons/illustrator.svg";
-import xd from "/assets/icons/xd.svg";
-import figma from "/assets/icons/figma.svg";
-
 import React, { useEffect, useState } from 'react';
 
 
@@ -55,15 +41,15 @@ return (
 
                 <div className="skill-container developer-container">
 
-                    <img src={VSCODEimage} alt="" />
-                    <img src={html5} alt="" />
-                    <img src={css3} alt="" />
-                    <img src={sass} alt="" />
-                    <img src={javascript} alt="" />
-                    <img src={react} alt="" />
-                    <img src={php} alt="" />
-                    <img src={wordpress} alt="" />
-                    <img src={shopify} alt="" />
+                    <img src="/assets/icons/vscode.svg" alt="" />
+                    <img src="/assets/icons/html5.svg" alt="" />
+                    <img src="/assets/icons/css3.svg" alt="" />
+                    <img src="/assets/icons/sass.svg" alt="" />
+                    <img src="/assets/icons/javascript.svg" alt="" />
+                    <img src="assets/icons/react.svg" alt="" />
+                    <img src="/assets/icons/php.svg" alt="" />
+                    <img src="/assets/icons/wordpress.svg" alt="" />
+                    <img src="/assets/icons/shopify.svg" alt="" />
 
                 </div>
 
@@ -71,10 +57,10 @@ return (
 
                 <div className="skill-container designer-container">
 
-                    <img src={photoshop} alt="" />
-                    <img src={illustrator} alt="" />
-                    <img src={xd} alt="" />
-                    <img src={figma} alt="" />
+                    <img src="/assets/icons/photoshop.svg" alt="" />
+                    <img src="/assets/icons/illustrator.svg" alt="" />
+                    <img src= "/assets/icons/xd.svg" alt="" />
+                    <img src="/assets/icons/figma.svg" alt="" />
 
                 </div>
 
