@@ -51,11 +51,6 @@
 }
 
 // animations and keyframes for nav bar - TOP LEFT
-@keyframes top-left-home {
-    100% {
-        transform: translate( 60px, -70px);
-    }
-}
 
 @keyframes top-left-works {
     100% {
@@ -78,10 +73,6 @@
 .dropdown-menu.top-left {
 
     ul {
-        .home {
-            animation: top-left-home 0.5s forwards;
-        }
-        
         .works {
             animation: top-left-works 0.5s forwards;
         }
@@ -97,12 +88,6 @@
 }
 
 // animations and keyframes for nav bar - TOP MIDDLE
-
-@keyframes top-middle-home {
-    100% {
-        transform: translate( -45px, -20px);
-    }
-}
 
 @keyframes top-middle-works {
     100% {
@@ -124,10 +109,6 @@
 
 .dropdown-menu.top-middle {
     ul {
-        .home {
-            animation: top-middle-home 0.5s forwards;
-        }
-        
         .works {
             animation: top-middle-works 0.5s forwards;
         }
@@ -143,12 +124,6 @@
 }
 
 // animations and keyframes for nav bar - TOP RIGHT
-
-@keyframes top-right-home {
-    100% {
-        transform: translate( -60px, -70px);
-    }
-}
 
 @keyframes top-right-works {
     100% {
@@ -170,10 +145,6 @@
 
 .dropdown-menu.top-right {
     ul {
-        .home {
-            animation: top-right-home 0.5s forwards;
-        }
-        
         .works {
             animation: top-right-works 0.5s forwards;
         }
@@ -196,12 +167,6 @@
 
 // animations and keyframes for nav bar - BOTTOM MIDDLE
 
-@keyframes bottom-middle-home {
-    100% {
-        transform: translate( -45px, -40px);
-    }
-}
-
 @keyframes bottom-middle-works {
     100% {
         transform: translate( -25px, -75px);
@@ -222,10 +187,6 @@
 
 .dropdown-menu.bottom-middle {
     ul {
-        .home {
-            animation: bottom-middle-home 0.5s forwards;
-        }
-        
         .works {
             animation: bottom-middle-works 0.5s forwards;
         }
@@ -242,55 +203,28 @@
 
 // animations and keyframes for nav bar - BOTTOM LEFT
 
-@keyframes bottom-left-home {
+@keyframes bottom-left-works {
     100% {
         transform: translateY( -85px );
     }
 }
 
-@keyframes bottom-left-works {
+@keyframes bottom-left-about {
     100% {
         transform: translate( 60px, -70px);
     }
 }
 
-@keyframes top-left-works {
-    100% {
-        transform: translate( 70px, -35px );
-    }
-}
-
-@keyframes bottom-left-about {
-    100% {
-        transform: translate( 70px, -35px );
-    }
-}
-
-@keyframes top-left-about {
-    100% {
-        transform: translate( 60px, -5px );
-    }
-}
-
 @keyframes bottom-left-contact {
     100% {
-        transform: translate( 60px, -5px );
+        transform: translate( 70px, -35px );
     }
 }
 
-@keyframes top-left-contact {
-    100% {
-        transform: translateY( 15px );
-    }
-}
 
 .dropdown-menu.bottom-left {
 
     ul {
-        .home {
-            animation: bottom-left-home 0.5s forwards;
-        }
-        
         .works {
             animation: bottom-left-works 0.5s forwards;
         }
@@ -308,37 +242,27 @@
 
 // animations and keyframes for nav bar - BOTTOM RIGHT
 
-@keyframes bottom-right-home {
+@keyframes bottom-right-works {
     100% {
         transform: translateY( -85px );
     }
 }
 
-@keyframes bottom-right-works {
+@keyframes bottom-right-about {
     100% {
         transform: translate( -60px, -70px);
     }
 }
 
-@keyframes bottom-right-about {
-    100% {
-        transform: translate( -70px, -35px);
-    }
-}
-
 @keyframes bottom-right-contact {
     100% {
-        transform: translate( -60px, -5px);
+        transform: translate( -70px, -35px);
     }
 }
 
 .dropdown-menu.bottom-right {
 
     ul {
-        .home {
-            animation: bottom-right-home 0.5s forwards;
-        }
-        
         .works {
             animation: bottom-right-works 0.5s forwards;
         }
@@ -414,10 +338,6 @@
     .dropdown-menu.bottom-middle,
     .dropdown-menu.bottom-right {
         ul {
-            .home {
-                animation: unset;
-            }
-            
             .works {
                 animation: unset;
             }

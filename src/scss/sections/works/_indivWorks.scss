@@ -18,13 +18,16 @@
             transform: scale(1.1);
         }
     }
+
     .indiv-works-logo:hover {
         animation: logoHover 0.5s forwards;
     }
+
     .home-nav {
         color: white;
         text-align: right;
     }
+
     .work-details {
 
         h1 {
@@ -35,6 +38,19 @@
             color: white;
             text-align: center;
         }
+    }
+
+    .feat-about,
+    .feat-reflect {
+        text-align: left;
+    }
+
+    .feat-name {
+        transform: scale(1.1);
+    }
+
+    .techs {
+        text-align: left;
     }
 
     .tabs-container {
@@ -57,6 +73,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+            padding: 0 2rem;
         }
     }
 

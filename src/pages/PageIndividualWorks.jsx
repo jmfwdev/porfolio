@@ -74,7 +74,10 @@ function WorksPage() {
                                 <h3 className='coding-tech-title'>Coding</h3>
                                 <ul>
                                     {work.coding.map ((codeTech) => (
-                                        <li key={codeTech.name}>{codeTech.name}</li>
+                                        <li 
+                                            key={codeTech.name}
+                                            className='techs'
+                                        >{codeTech.name}</li>
                                     ))}
                                 </ul>
                             </div>
@@ -85,7 +88,10 @@ function WorksPage() {
                                 <h3 className='design-tech-title'>Designing</h3>
                                 <ul>
                                         {work.designing.map ((designTech) => (
-                                            <li>{designTech.name}</li>
+                                            <li
+                                                key={designTech.name}
+                                                className='techs'
+                                            >{designTech.name}</li>
                                         ))}
                                 </ul>
                             </div>

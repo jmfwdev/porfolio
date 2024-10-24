@@ -48,7 +48,8 @@ function Works() {
                 <ScrollAnimation animateIn='fadeInLeft'>
 
                   <h3>{work.name}</h3>
-
+                  <p>{work.overview}</p>
+                  
                 </ScrollAnimation>
 
               </Link>
