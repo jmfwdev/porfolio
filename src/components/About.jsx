@@ -28,7 +28,7 @@ return (
     <section className="about-container" id="about">
         <h2>About me</h2>
 
-        <img    src="../../src/assets/images/portfolio-image.jpeg" 
+        <img    src="/assets/images/portfolio-image.jpeg" 
                 alt="JM's picture"
                 className="img"
         />
