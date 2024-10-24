@@ -1,16 +1,16 @@
-import VSCODEimage from "../assets/icons/vscode.svg";
-import html5 from "../assets/icons/html5.svg";
-import css3 from "../assets/icons/css3.svg";
-import sass from "../assets/icons/sass.svg";
-import javascript from "../assets/icons/javascript.svg";
-import react from "../assets/icons/react.svg";
-import php from "../assets/icons/php.svg";
-import wordpress from "../assets/icons/wordpress.svg";
-import shopify from "../assets/icons/shopify.svg";
-import photoshop from "../assets/icons/photoshop.svg";
-import illustrator from "../assets/icons/illustrator.svg";
-import xd from "../assets/icons/xd.svg";
-import figma from "../assets/icons/figma.svg";
+import VSCODEimage from "../../public/assets/icons/vscode.svg";
+import html5 from "../../public/assets/icons/html5.svg";
+import css3 from "../../public/assets/icons/css3.svg";
+import sass from "../../public/assets/icons/sass.svg";
+import javascript from "../../public/assets/icons/javascript.svg";
+import react from "../../public/assets/icons/react.svg";
+import php from "../../public/assets/icons/php.svg";
+import wordpress from "../../public/assets/icons/wordpress.svg";
+import shopify from "../../public/assets/icons/shopify.svg";
+import photoshop from "../../public/assets/icons/photoshop.svg";
+import illustrator from "../../public/assets/icons/illustrator.svg";
+import xd from "../../public/assets/icons/xd.svg";
+import figma from "../../public/assets/icons/figma.svg";
 
 import React, { useEffect, useState } from 'react';
 

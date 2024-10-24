@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import github from '../assets/icons/github.svg';
-import linkedin from '../assets/icons/linkedin.svg';
-import logo from '../assets/icons/logo.svg';
+import github from '../../public/assets/icons/github.svg';
+import linkedin from '../../public/assets/icons/linkedin.svg';
+import logo from '../../public/assets/icons/logo.svg';
 
 function Footer () {
 

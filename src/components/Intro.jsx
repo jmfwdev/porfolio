@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import arrowDown from "../assets/icons/arrow-down.svg";
-import backgroundImage from "../assets/images/background.png";
+import arrowDown from "../../public/assets/icons/arrow-down.svg";
+import backgroundImage from "../../public/assets/images/background.png";
 
     function Intro() {
         const [portfolioData, setPortfolioData] = useState(null);

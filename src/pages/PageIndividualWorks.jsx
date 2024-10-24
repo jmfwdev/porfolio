@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Logo from "../assets/icons/logo.svg";
+import Logo from "../../public/assets/icons/logo.svg";
 
 function WorksPage() {
     const { id } = useParams(); // Get the id from the URL
@@ -31,7 +31,7 @@ function WorksPage() {
     return (
         <main className='indiv-works'>
         <img
-            src={`../../src/assets/images/${work.id}.png`}
+            src={`../../public/assets/images/${work.id}.png`}
             alt={work.name}
             className={`indiv-work-image ${work.id}`}
         />

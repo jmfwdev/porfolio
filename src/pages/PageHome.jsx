@@ -4,7 +4,7 @@ import About from "../components/About";
 import Nav from "../components/Nav";
 import ScrollTop from "../components/ScrollToTopButton";
 
-import React, { useState } from "react";
+import React from 'react';
 
 
 function PageHome () {
