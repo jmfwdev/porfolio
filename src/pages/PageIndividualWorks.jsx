@@ -31,7 +31,7 @@ function WorksPage() {
     return (
         <main className='indiv-works'>
         <img
-            src={`../../public/assets/images/${work.id}.png`}
+            src={`/assets/images/${work.id}.png`}
             alt={work.name}
             className={`indiv-work-image ${work.id}`}
         />

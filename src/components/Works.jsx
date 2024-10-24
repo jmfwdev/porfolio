@@ -38,7 +38,7 @@ function Works() {
                   {work.backdrop && (
                     <ScrollAnimation animateIn='fadeIn'>
                       <img
-                          src={`../../public/assets/images/${work.id}.png`}
+                          src={`/assets/images/${work.id}.png`}
                           alt={work.name}
                           className={`work-image ${work.id}`}
                       />
