@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from "react-router-dom";
 
 function Nav() {
     const [isOpen, setIsOpen] = useState(window.innerWidth < 800); // Default to open only if less than 800px
@@ -142,9 +141,9 @@ function Nav() {
                         {isOpen && (
                             <nav className={`dropdown-menu ${dropdownClass}`}>
                                 <ul>
-                                <li className='works'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#works'); }}>Works</a></li>
-                                <li className='about'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#about'); }}>About</a></li>
-                                <li className='contact'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#contact'); }}>Contact</a></li>
+                                    <li className='works'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#works'); }}>Works</a></li>
+                                    <li className='about'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#about'); }}>About</a></li>
+                                    <li className='contact'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#contact'); }}>Contact</a></li>
                                 </ul>
                             </nav>
                         )}
