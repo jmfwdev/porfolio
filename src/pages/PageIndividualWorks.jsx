@@ -98,7 +98,9 @@ function WorksPage() {
                             <a href={work.url}>Visit the site!</a>
                         </h2>
                     )}
-                    <h2 className="tabs">Github</h2>
+                    <h2 className="tabs">
+                        <a href={work.github}>Github</a>
+                    </h2>
                 </section>
             </div>
         </div>

@@ -36,7 +36,8 @@
                 }
             ],
             "backdrop": true,
-            "available": true
+            "available": true,
+            "github": "https://github.com/jmfwdev/porfolio"
         },
         {
             "name": "Movie Database",
@@ -70,14 +71,16 @@
                 }
             ],
             "backdrop": true,
-            "available": true
+            "available": true,
+            "github": "https://github.com/jmfwdev/react-movie"
         },
         {
             "name": "Capstone Project",
             "overview": "Woocommerce website about a fictional company called, Pacific Peak Adventures, selling tour packages available in British Columbia, Canada.",
             "id": "capstone-project",
             "backdrop": false,
-            "available": false
+            "available": false,
+            "github": ""
         }
     ],
     "contacts": [
