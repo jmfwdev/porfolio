@@ -58,33 +58,39 @@ function Nav() {
     const handleTouchStart = (e) => {
         // Disable dragging if viewport width is 800px or more
         if (window.innerWidth >= 800) return;
-
+    
         const touch = e.touches[0];
         const offsetX = touch.clientX - position.left;
         const offsetY = touch.clientY - position.top;
-
+    
         isDragging.current = true;
         document.body.style.overflow = 'hidden';
-
+    
+        // Prevent default touch actions (scrolling)
+        e.preventDefault();
+    
         // Start dragging
         const handleTouchMove = (e) => {
             if (!isDragging.current) return;
+    
+            // Prevent default touch actions during dragging
+            e.preventDefault();
+    
             const touch = e.touches[0];
-
             let newLeft = touch.clientX - offsetX;
             let newTop = touch.clientY - offsetY;
-
+    
             const menuWidth = menuRef.current.offsetWidth;
             const menuHeight = menuRef.current.offsetHeight;
-
+    
             const viewportWidth = window.innerWidth;
             const viewportHeight = window.innerHeight;
-
+    
             newLeft = Math.max(0, Math.min(newLeft, viewportWidth - menuWidth));
             newTop = Math.max(0, Math.min(newTop, viewportHeight - menuHeight));
             setPosition({ left: newLeft, top: newTop });
         };
-
+    
         // Stop dragging
         const handleTouchEnd = () => {
             isDragging.current = false;
@@ -92,7 +98,7 @@ function Nav() {
             window.removeEventListener('touchmove', handleTouchMove);
             window.removeEventListener('touchend', handleTouchEnd);
         };
-
+    
         window.addEventListener('touchmove', handleTouchMove);
         window.addEventListener('touchend', handleTouchEnd);
     };

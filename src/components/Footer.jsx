@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import github from '/assets/icons/github.svg';
-import linkedin from '/assets/icons/linkedin.svg';
-import logo from '/assets/icons/logo.svg';
-
 function Footer () {
 
     const [portfolioData, setPortfolioData] = useState(null);
@@ -27,7 +23,7 @@ function Footer () {
 
         <>
         <footer id="contact">
-            <img className="footer-logo" src={logo} alt="" />
+            <img className="footer-logo" src='/assets/icons/logo.svg' alt="" />
 
             <h2>Contact Me</h2>
 
@@ -43,11 +39,11 @@ function Footer () {
             <div className="socials-container">
 
                 <a href="https://github.com/jmfwdev">
-                    <img src={github} alt="" />
+                    <img src='/assets/icons/github.svg' alt="" />
                 </a>
 
                 <a href="https://www.linkedin.com/in/jan-marc-hore-724335332">
-                    <img src={linkedin} alt="" />
+                    <img src='/assets/icons/linkedin.svg' alt="" />
                 </a>
 
             </div>
