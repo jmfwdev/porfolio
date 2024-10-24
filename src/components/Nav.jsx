@@ -64,16 +64,19 @@ function Nav() {
         const offsetY = touch.clientY - position.top;
     
         isDragging.current = true;
-        document.body.style.overflow = 'hidden';
     
-        // Prevent default touch actions (scrolling)
-        e.preventDefault();
+        // Prevent default scrolling globally
+        const preventDefault = (e) => {
+            e.preventDefault();
+        };
+    
+        document.body.style.overflow = 'hidden'; // Disable scrolling
     
         // Start dragging
         const handleTouchMove = (e) => {
             if (!isDragging.current) return;
     
-            // Prevent default touch actions during dragging
+            // Prevent default scrolling
             e.preventDefault();
     
             const touch = e.touches[0];
@@ -94,14 +97,17 @@ function Nav() {
         // Stop dragging
         const handleTouchEnd = () => {
             isDragging.current = false;
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
             window.removeEventListener('touchmove', handleTouchMove);
             window.removeEventListener('touchend', handleTouchEnd);
+            document.removeEventListener('touchmove', preventDefault); // Remove global preventDefault
         };
     
         window.addEventListener('touchmove', handleTouchMove);
         window.addEventListener('touchend', handleTouchEnd);
+        document.addEventListener('touchmove', preventDefault); // Add global preventDefault
     };
+    
 
     // Update menu state on window resize
     useEffect(() => {
