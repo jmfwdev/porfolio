@@ -33,27 +33,35 @@
   z-index: 10;
 }
 
+@keyframes scaleanimate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
 .circle {
   width: 50px;
   height: 50px;
-  border: 4px solid white;
   border-radius: 50%;
-  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.5019607843);
+  animation: scaleanimate 2s infinite;
 }
 
 @keyframes top-left-works {
   100% {
-    transform: translate(70px, -35px);
+    transform: translate(80px, -35px);
   }
 }
 @keyframes top-left-about {
   100% {
-    transform: translate(60px, -5px);
+    transform: translate(70px, -5px);
   }
 }
 @keyframes top-left-contact {
   100% {
-    transform: translateY(15px);
+    transform: translate(10px, 15px);
   }
 }
 .dropdown-menu.top-left ul .works {
@@ -68,12 +76,12 @@
 
 @keyframes top-middle-works {
   100% {
-    transform: translate(-25px, 15px);
+    transform: translate(-55px, -20px);
   }
 }
 @keyframes top-middle-about {
   100% {
-    transform: translate(40px, 15px);
+    transform: translate(5px, 15px);
   }
 }
 @keyframes top-middle-contact {
@@ -103,7 +111,7 @@
 }
 @keyframes top-right-contact {
   100% {
-    transform: translateY(15px);
+    transform: translate(-10px, 15px);
   }
 }
 .dropdown-menu.top-right ul .works {
@@ -116,19 +124,23 @@
   animation: top-right-contact 0.5s forwards;
 }
 
+.dropdown-menu.middle {
+  display: none;
+}
+
 @keyframes bottom-middle-works {
   100% {
-    transform: translate(-25px, -75px);
+    transform: translate(-55px, -50px);
   }
 }
 @keyframes bottom-middle-about {
   100% {
-    transform: translate(40px, -75px);
+    transform: translate(5px, -90px);
   }
 }
 @keyframes bottom-middle-contact {
   100% {
-    transform: translate(65px, -40px);
+    transform: translate(65px, -50px);
   }
 }
 .dropdown-menu.bottom-middle ul .works {
@@ -143,12 +155,12 @@
 
 @keyframes bottom-left-works {
   100% {
-    transform: translateY(-85px);
+    transform: translate(10px, -85px);
   }
 }
 @keyframes bottom-left-about {
   100% {
-    transform: translate(60px, -70px);
+    transform: translate(70px, -70px);
   }
 }
 @keyframes bottom-left-contact {
