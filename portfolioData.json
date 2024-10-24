@@ -8,6 +8,18 @@
         {
             "name": "Portfolio",
             "overview": "Portfolio built primarly using React JS featuring different works and technology",
+            "features": [
+                {
+                    "name": "JSON File",
+                    "about": "Custom JSON file storing all the relevent data for my portfolio.",
+                    "reflection": "I created a custom JSON file to store all of the data that I put out in my portfolio. This made my data easily accesible and I can output it however I want"
+                },
+                {
+                    "name": "Unique Mobile Navigation",
+                    "about": "Clickable and movable mobile navigation",
+                    "reflection": "I wanted to make a unique mobile navigation rather than having a normal dropdown menu. Inspired from the navigation menu from the old IPhones, "
+                }
+            ],
             "id": "portfolio",
             "coding": [
                 {
@@ -29,6 +41,13 @@
         {
             "name": "Movie Database",
             "overview": "A movie database built using React JS.",
+            "features": [
+                {
+                    "name": "Web API",
+                    "about": "Web API to grab movies to be outputed and featured on a dynamic website.",
+                    "reflection": "Using TMDB API I made my own movie database showing all sorts of movies from trending to top-rated."
+                }
+            ],
             "id": "movie-database",
             "url": "https://jmfw.dev/spade",
             "coding": [

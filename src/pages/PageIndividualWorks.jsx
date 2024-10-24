@@ -30,7 +30,11 @@ function WorksPage() {
 
     return (
         <main className='indiv-works'>
-
+        <img
+            src={`../../src/assets/images/${work.id}.png`}
+            alt={work.name}
+            className={`indiv-work-image ${work.id}`}
+        />
         <Link to="/">
             <img
                 className='indiv-works-logo'
@@ -46,57 +50,65 @@ function WorksPage() {
         </div>
 
         <div className="tabs-container">
-            <ul className='tab-nav'>
-
-                <li className="tabs">Overview</li>
+            <div className='tab-nav'>
+                <section>
+                    <h2 className="tabs">Overview</h2>
                     <p>{work.overview}</p>
+                </section>
 
-                <li className="tabs">Techs</li>
-                    {work.coding && (
-                        <div>
-                            <p className='coding-tech-title'>Coding</p>
-                            <ul>
-                                {work.coding.map ((codeTech) => (
-                                    <li>{codeTech.name}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    )}
+                <section>
+                    <h2 className="tabs">Features</h2>
+                        {work.features.map ((feat) => (
+                            <div>
+                                <p className='feat-name'>{feat.name}</p>
+                                <p className='feat-about'>{feat.about}</p>
+                                <p className='feat-reflect'>{feat.reflection}</p>
+                            </div>
+                        ))}
+                </section>
 
-                        {work.designing && (
-                        <div>
-                            <p className='design-tech-title'>Designing</p>
-                            <ul>
-                                    {work.designing.map ((designTech) => (
-                                        <li>{designTech.name}</li>
+                <section>
+                    <h2 className="tabs">Techs</h2>
+                        {work.coding && (
+                            <div>
+                                <h3 className='coding-tech-title'>Coding</h3>
+                                <ul>
+                                    {work.coding.map ((codeTech) => (
+                                        <li key={codeTech.name}>{codeTech.name}</li>
                                     ))}
-                            </ul>
-                        </div>
+                                </ul>
+                            </div>
                         )}
-                {work.url && (
-                    <li className="tabs">
-                        <a href={work.url}>Visit the site!</a>
-                    </li>
-                )}
-                <li className="tabs">Github</li>
-            </ul>
 
-            <section className="overview hide">
-                <p>{work.overview}</p>
-            </section>
+                            {work.designing && (
+                            <div>
+                                <h3 className='design-tech-title'>Designing</h3>
+                                <ul>
+                                        {work.designing.map ((designTech) => (
+                                            <li>{designTech.name}</li>
+                                        ))}
+                                </ul>
+                            </div>
+                            )}
+                </section>
 
-            <section className="technology hide">
-
-                {work.coding.map ((tech) => (
-                    <p key={tech.name}>{tech.name}</p>
-                ))}
-
-            </section>
+                <section className='links'>
+                    {work.url && (
+                        <h2 className="tabs">
+                            <a href={work.url}>Visit the site!</a>
+                        </h2>
+                    )}
+                    <h2 className="tabs">Github</h2>
+                </section>
+            </div>
         </div>
         </div>
         ) : (
-            <div>
-                <div className="work-details">
+            <div className='coming-soon-container'>
+
+                <div    
+                    className="work-details"       
+                >
                     <h1>{work.name}</h1>
                 </div>
                 
