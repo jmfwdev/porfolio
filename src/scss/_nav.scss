@@ -1,311 +1,18 @@
-// mobile nav
-
-.mobile-nav {
+.navigation {
     position: fixed;
-    z-index: 9999;
-}
-
-.menu-container {
-    position: relative;
-}
-
-// dropdown menu
-
-.dropdown-menu {
-    // display: none;
-
-
-    text-align: center;
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        position: relative;
-    }
-
-    li {
-        position: absolute;
-        top: 0;
-        transform: translate( 5px, -40px);
-        z-index: -1;
-    }
-
-    a,
-    a:visited {
-        text-decoration: none;
-        color: white;
-    }
-}
-
-// menu icon
-.menu-icon {
-    z-index: 10;
-}
-
-@keyframes scaleanimate {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-}
-
-.circle {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #eeeeee80;
-    animation: scaleanimate 2s infinite;
-}
-
-
-// animations and keyframes for nav bar - TOP LEFT
-
-@keyframes top-left-works {
-    100% {
-        transform: translate( 80px, -35px );
-    }
-}
-
-@keyframes top-left-about {
-    100% {
-        transform: translate( 70px, -5px );
-    }
-}
-
-@keyframes top-left-contact {
-    100% {
-        transform: translate( 10px, 15px );
-    }
-}
-
-.dropdown-menu.top-left {
-
-    ul {
-        .works {
-            animation: top-left-works 0.5s forwards;
-        }
-
-        .about {
-            animation: top-left-about 0.5s forwards;
-        }
-
-        .contact {
-            animation: top-left-contact 0.5s forwards;
-        }
-    }
-}
-
-// animations and keyframes for nav bar - TOP MIDDLE
-
-@keyframes top-middle-works {
-    100% {
-        transform: translate( -55px, -20px);
-    }
-}
-
-@keyframes top-middle-about {
-    100% {
-        transform: translate( 5px, 15px);
-    }
-}
-
-@keyframes top-middle-contact {
-    100% {
-        transform: translate( 65px, -20px);
-    }
-}
-
-.dropdown-menu.top-middle {
-    ul {
-        .works {
-            animation: top-middle-works 0.5s forwards;
-        }
-
-        .about {
-            animation: top-middle-about 0.5s forwards;
-        }
-
-        .contact {
-            animation: top-middle-contact 0.5s forwards;
-        }
-    }
-}
-
-// animations and keyframes for nav bar - TOP RIGHT
-
-@keyframes top-right-works {
-    100% {
-        transform: translate( -70px, -35px);
-    }
-}
-
-@keyframes top-right-about {
-    100% {
-        transform: translate( -60px, -5px);
-    }
-}
-
-@keyframes top-right-contact {
-    100% {
-        transform: translate( -10px, 15px);
-    }
-}
-
-.dropdown-menu.top-right {
-    ul {
-        .works {
-            animation: top-right-works 0.5s forwards;
-        }
-
-        .about {
-            animation: top-right-about 0.5s forwards;
-        }
-
-        .contact {
-            animation: top-right-contact 0.5s forwards;
-        }
-    }
-}
-
-// animations and keyframes for nav bar - MIDDLE
-
-.dropdown-menu.middle {
-    display: none;
-}
-
-// animations and keyframes for nav bar - BOTTOM MIDDLE
-
-@keyframes bottom-middle-works {
-    100% {
-        transform: translate( -55px, -50px);
-    }
-}
-
-@keyframes bottom-middle-about {
-    100% {
-        transform: translate( 5px, -90px);
-    }
-}
-
-@keyframes bottom-middle-contact {
-    100% {
-        transform: translate( 65px, -50px);
-    }
-}
-
-.dropdown-menu.bottom-middle {
-    ul {
-        .works {
-            animation: bottom-middle-works 0.5s forwards;
-        }
-
-        .about {
-            animation: bottom-middle-about 0.5s forwards;
-        }
-
-        .contact {
-            animation: bottom-middle-contact 0.5s forwards;
-        }
-    }
-}
-
-// animations and keyframes for nav bar - BOTTOM LEFT
-
-@keyframes bottom-left-works {
-    100% {
-        transform: translate( 10px, -85px );
-    }
-}
-
-@keyframes bottom-left-about {
-    100% {
-        transform: translate( 70px, -70px);
-    }
-}
-
-@keyframes bottom-left-contact {
-    100% {
-        transform: translate( 70px, -35px );
-    }
-}
-
-
-.dropdown-menu.bottom-left {
-
-    ul {
-        .works {
-            animation: bottom-left-works 0.5s forwards;
-        }
-
-        .about {
-            animation: bottom-left-about 0.5s forwards;
-        }
-
-        .contact {
-            animation: bottom-left-contact 0.5s forwards;
-        }
-    }
-
-}
-
-// animations and keyframes for nav bar - BOTTOM RIGHT
-
-@keyframes bottom-right-works {
-    100% {
-        transform: translateY( -85px );
-    }
-}
-
-@keyframes bottom-right-about {
-    100% {
-        transform: translate( -60px, -70px);
-    }
-}
-
-@keyframes bottom-right-contact {
-    100% {
-        transform: translate( -70px, -35px);
-    }
-}
-
-.dropdown-menu.bottom-right {
-
-    ul {
-        .works {
-            animation: bottom-right-works 0.5s forwards;
-        }
-
-        .about {
-            animation: bottom-right-about 0.5s forwards;
-        }
-
-        .contact {
-            animation: bottom-right-contact 0.5s forwards;
-        }
-    }
-
-}
-
-.desktop-nav {
-    position: fixed;
-    right: 1rem;
-    top: 30%;
-    z-index: 9999;
+    z-index: 9999; 
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
 
     nav {
-        text-align: center;
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
             display: flex;
-            flex-direction: column;
             justify-content: space-evenly;
-            height: 20rem;
             li {
-                margin: 1rem;
                 a {
                     background-color: rgb(20, 20, 20);
                     text-decoration: none;
@@ -320,59 +27,40 @@
             }
         }
     }
+}
 
-    @keyframes hoverNav {
-        100% {
-            transform: scale(1.2) translateX(-10px);
-        }
-    }
 
-    nav{
-        ul{
-            li{
-                a:hover{
-                    animation: hoverNav 0.5s forwards;
+@media (min-width: 50em) {
+
+    .navigation {
+        right: 1rem;
+        top: 30%;
+        width: unset;
+        
+        nav {
+            text-align: center;
+            ul {
+                height: 20rem;
+                li {
+                    margin: 1rem;
                 }
             }
         }
-    }
-}
 
-// media query to get rid mobile nav when over 800px viewport width
-@media (min-width: 50rem) {
-
-    .dropdown-menu.top-left,
-    .dropdown-menu.top-middle,
-    .dropdown-menu.top-right,
-    .dropdown-menu.bottom-left,
-    .dropdown-menu.bottom-middle,
-    .dropdown-menu.bottom-right {
-        ul {
-            .works {
-                animation: unset;
-            }
-    
-            .about {
-                animation: unset;
-            }
-    
-            .contact {
-                animation: unset;
+        @keyframes hoverNav {
+            100% {
+                transform: scale(1.2) translateX(-10px);
             }
         }
-    }
-
-    .dropdown-menu {
-        position: fixed;
-        ul {
-            position: unset;
-            li {
-                position: unset;
+        
+        nav{
+            ul{
+                li{
+                    a:hover{
+                        animation: hoverNav 0.5s forwards;
+                    }
+                }
             }
         }
-    }
-
-    .menu-icon {
-        display: none;
     }
 }

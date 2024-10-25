@@ -127,41 +127,15 @@ function Nav() {
 
     return (
         <>
-            {window.innerWidth >= 800 ? (
-                <div className='desktop-nav'>
-                    {/* Desktop Navigation */}
-                    <nav>
-                        <ul>
-                            <li className='works'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#works'); }}>Works</a></li>
-                            <li className='about'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#about'); }}>About</a></li>
-                            <li className='contact'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#contact'); }}>Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            ) : (
-                <div    
-                    className='mobile-nav'
-                    ref={menuRef}
-                    style={{ top: position.top, left: position.left, position: 'fixed' }}
-                    onTouchStart={handleTouchStart}
-                >
-                    <div className='menu-container'>
-                        <div className='menu-icon' onClick={toggleMenu}>
-                            <div className='circle'></div>
-                        </div>
-
-                        {isOpen && (
-                            <nav className={`dropdown-menu ${dropdownClass}`}>
-                                <ul>
-                                    <li className='works'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#works'); }}>Works</a></li>
-                                    <li className='about'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#about'); }}>About</a></li>
-                                    <li className='contact'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#contact'); }}>Contact</a></li>
-                                </ul>
-                            </nav>
-                        )}
-                    </div>
-                </div>
-            )}
+            <div className='navigation'>
+                <nav>
+                    <ul>
+                        <li className='works'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#works'); }}>Works</a></li>
+                        <li className='about'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#about'); }}>About</a></li>
+                        <li className='contact'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#contact'); }}>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </>
     );
 }
