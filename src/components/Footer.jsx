@@ -25,7 +25,7 @@ function Footer () {
         <footer id="contact">
             <img className="footer-logo" src='/assets/icons/logo.svg' alt="" />
 
-            <h2>Contact Me</h2>
+            <h2>Contact Me/&gt;</h2>
 
             <ul className='contact-list'>
 

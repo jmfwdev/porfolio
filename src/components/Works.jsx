@@ -25,7 +25,7 @@ function Works() {
 
         <>
         <div className="works-container" id="works">
-            <h2>WORKS</h2>
+            <h2>WORKS/&gt;</h2>
             {portfolioData.works.map ((work) => (
               <article 
               className={`${work.name} works-link`}
