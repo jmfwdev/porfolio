@@ -28,14 +28,15 @@ function Works() {
             <h2>WORKS</h2>
             {portfolioData.works.map ((work) => (
               <article 
-                  className={`${work.name} works-link`}
-                  key={work.name}
-                  style={{position: "relative"}}>
+              className={`${work.name} works-link`}
+              key={work.name}
+              style={{position: "relative"}}>
 
+              {work.available ? (
+                <div>
               <Link 
                   to={`/works/${work.id}`}
               >
-                  {work.backdrop && (
                     <ScrollAnimation animateIn='fadeIn'>
                       <img
                           src={`/assets/images/${work.id}.png`}
@@ -43,7 +44,6 @@ function Works() {
                           className={`work-image ${work.id}`}
                       />
                     </ScrollAnimation>
-                  )}
 
                 <ScrollAnimation animateIn='fadeInLeft'>
 
@@ -52,9 +52,8 @@ function Works() {
                   
                 </ScrollAnimation>
 
-              </Link>
-                  
-                  {work.available ? (
+                  </Link>
+              
                     <Link to={`/works/${work.id}`}>
                       <ScrollAnimation animateIn='fadeIn'>
 
@@ -62,9 +61,38 @@ function Works() {
 
                       </ScrollAnimation>
                     </Link>
+                    </div>
                   ) : (
-                    <p className='button'>Coming Soon!</p>
-                  )}
+                    <div>
+                      <Link 
+                  to={`/works/${work.id}`}
+              >
+                    <ScrollAnimation animateIn='fadeIn'>
+                      <img 
+                          src="/assets/icons/logo.svg" 
+                          alt="placeholder-background"
+                          className='placeholder-background' 
+                      />
+                    </ScrollAnimation>
+
+                <ScrollAnimation animateIn='fadeInLeft'>
+
+                  <h3>{work.name}</h3>
+                  <p>{work.overview}</p>
+                  
+                </ScrollAnimation>
+
+                  </Link>
+              
+                    <Link to={`/works/${work.id}`}>
+                      <ScrollAnimation animateIn='fadeIn'>
+
+                      <p className='button'>Coming Soon!</p>
+
+                      </ScrollAnimation>
+                    </Link>
+                    </div>
+                )}
                 </article>
             ))}
         </div>

@@ -452,7 +452,8 @@ h6 {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background-color: rgb(0, 0, 20);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(20, 1, 40) 50%, rgb(0, 0, 0) 100%);
   margin: 3rem auto;
   box-shadow: 5px 5px 15px #000;
 }
@@ -503,6 +504,17 @@ h6 {
   animation: worksHover 0.5s forwards;
 }
 .works-container .work-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(0.05rem) brightness(0.3);
+  box-shadow: 5px 5px 15px #000;
+}
+.works-container .placeholder-background {
   position: absolute;
   top: 0;
   left: 0;

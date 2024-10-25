@@ -30,11 +30,6 @@ function WorksPage() {
 
     return (
         <main className='indiv-works'>
-        <img
-            src={`/assets/images/${work.id}.png`}
-            alt={work.name}
-            className={`indiv-work-image ${work.id}`}
-        />
         <Link to="/">
             <img
                 className='indiv-works-logo'
@@ -44,6 +39,12 @@ function WorksPage() {
         </Link>
         {work.available ? (
         <div>
+
+        <img
+            src={`/assets/images/${work.id}.png`}
+            alt={work.name}
+            className={`indiv-work-image ${work.id}`}
+        />
 
         <div className="work-details">
             <h1>{work.name}</h1>
@@ -113,6 +114,12 @@ function WorksPage() {
         </div>
         ) : (
             <div className='coming-soon-container'>
+
+            <img
+                src={`/assets/icons/logo.svg`}
+                alt={work.name}
+                className={`indiv-work-image`}
+            />
 
                 <div    
                     className="work-details"       
