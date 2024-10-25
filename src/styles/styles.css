@@ -638,6 +638,10 @@ h6 {
   align-items: center;
   margin: 5rem 0;
 }
+.about-container .about-description {
+  margin: 1rem;
+  max-width: 31.25rem;
+}
 .about-container h2,
 .about-container p {
   color: white;
@@ -645,7 +649,7 @@ h6 {
 .about-container h2 {
   text-align: center;
 }
-.about-container .img {
+.about-container .portfolio-img {
   width: 200px;
   height: auto;
   box-shadow: 5px 5px 15px #000;
@@ -673,14 +677,31 @@ h6 {
   border-radius: 50rem;
   margin: 1rem;
 }
-.about-container .about-description {
-  margin: 1rem;
-  max-width: 50rem;
-}
 .about-container img {
   margin: 1rem;
 }
 
+@media (min-width: 50rem) {
+  .about-container {
+    margin: 3rem auto;
+    max-width: 50rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "title title" "image desc" "skills skills";
+  }
+  .about-container .title {
+    grid-area: title;
+  }
+  .about-container .portfolio-img {
+    grid-area: image;
+  }
+  .about-container .about-description {
+    grid-area: desc;
+  }
+  .about-container .skills {
+    grid-area: skills;
+  }
+}
 footer {
   display: flex;
   align-items: center;

@@ -26,11 +26,11 @@ return (
     <>
     
     <section className="about-container" id="about">
-        <h2>About me/&gt;</h2>
+        <h2 className='title'>About me/&gt;</h2>
 
         <img    src="/assets/images/portfolio-image.jpeg" 
                 alt="JM's picture"
-                className="img"
+                className="portfolio-img"
         />
 
         <p className='about-description'>{portfolioData.about.description}</p>

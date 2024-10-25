@@ -3,6 +3,11 @@
     flex-direction: column;
     align-items: center;
     margin: 5rem 0;
+
+    .about-description {
+        margin: 1rem;
+        max-width: 31.25rem;
+    }
     
     h2,
     p {
@@ -13,7 +18,7 @@
         text-align: center;
     }
 
-    .img {
+    .portfolio-img {
         width: 200px;
         height: auto;
         box-shadow: 5px 5px 15px #000;
@@ -45,12 +50,36 @@
         margin: 1rem;
     }
 
-    .about-description {
-        margin: 1rem;
-        max-width: 50rem;
-    }
-
     img {
         margin: 1rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    .about-container {
+        margin: 3rem auto;
+        max-width: 50rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "title title"
+            "image desc"
+            "skills skills";
+
+        .title {
+            grid-area: title;
+        }
+
+        .portfolio-img {
+            grid-area: image;
+        }
+
+        .about-description {
+            grid-area: desc;
+        }
+
+        .skills {
+            grid-area: skills;
+        }
     }
 }
