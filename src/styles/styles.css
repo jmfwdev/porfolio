@@ -35,6 +35,7 @@
     text-align: center;
   }
   .navigation nav ul {
+    flex-direction: column;
     height: 20rem;
   }
   .navigation nav ul li {

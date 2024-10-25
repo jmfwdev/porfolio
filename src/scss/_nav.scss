@@ -40,6 +40,7 @@
         nav {
             text-align: center;
             ul {
+                flex-direction: column;
                 height: 20rem;
                 li {
                     margin: 1rem;
