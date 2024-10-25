@@ -645,9 +645,6 @@ h6 {
 .about-container h2 {
   text-align: center;
 }
-.about-container p {
-  margin: 1rem;
-}
 .about-container .img {
   width: 200px;
   height: auto;
@@ -662,12 +659,23 @@ h6 {
   width: 50px;
   height: auto;
 }
+.about-container .indiv-skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+}
 .about-container .skill {
   width: 100px;
   height: 50px;
   background-color: white;
   border-radius: 50rem;
   margin: 1rem;
+}
+.about-container .about-description {
+  margin: 1rem;
+  max-width: 50rem;
 }
 .about-container img {
   margin: 1rem;
