@@ -28,6 +28,8 @@ function WorksPage() {
         return <div>Loading...</div>;
     }
 
+    
+
     return (
         <main className='indiv-works'>
         <Link to="/">
@@ -57,12 +59,16 @@ function WorksPage() {
                     <p>{work.overview}</p>
                 </section>
 
+                <div className='feat-tech'>
+
                 <section>
                     <h2 className="tabs">Features</h2>
                         {work.features.map ((feat) => (
                             <div>
-                                <p className='feat-name'>{feat.name}</p>
+                                <h3 className='feat-name'>{feat.name}</h3>
+                                <h4>About</h4>
                                 <p className='feat-about'>{feat.about}</p>
+                                <h4>Reflection</h4>
                                 <p className='feat-reflect'>{feat.reflection}</p>
                             </div>
                         ))}
@@ -99,16 +105,22 @@ function WorksPage() {
                             )}
                 </section>
 
-                <section className='links'>
+                </div>
+
+                <div className='links-container'>
+                    <div className='link'>
                     {work.url && (
-                        <h2 className="tabs">
-                            <a href={work.url}>Visit the site!</a>
-                        </h2>
+                        <a href={work.url}>
+                            <img src="/assets/icons/web.svg" alt="" />
+                        </a>
                     )}
-                    <h2 className="tabs">
-                        <a href={work.github}>Github</a>
-                    </h2>
-                </section>
+                    {work.github && (
+                        <a href={work.github}>
+                            <img src="/assets/icons/github.svg" alt="" />
+                        </a>
+                    )}
+                    </div>
+                </div>
             </div>
         </div>
         </div>

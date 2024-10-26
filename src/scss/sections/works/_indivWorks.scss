@@ -6,16 +6,16 @@
     margin: 0 auto;
 
     .indiv-works-logo {
-        width: 50px;
+        width: 70px;
         height: auto;
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: 1.5rem;
+        right: 1.5rem;
     }
 
     @keyframes scaleHover {
         100% {
-            transform: scale(1.1);
+            transform: scale(1.5);
         }
     }
 
@@ -23,12 +23,38 @@
         animation: scaleHover 0.5s forwards;
     }
 
-    .links .tabs:hover {
+    .links-container {
+        max-width: 100px;
+        width: 100%;
+        margin: 3rem auto;
+
+        .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a:hover {
+            animation: scaleHover 0.5s forwards;
+        }
+
+        img {
+            width: 30px;
+            height: auto;
+        }
+
+        a {
+            margin: 0.5rem;
+        }
+
+        .tabs:hover {
         animation: scaleHover 0.5s forwards;
         background-color: white;
         a {
             color: rgb(50, 0, 0);
         }
+    }
+
     }
 
     .home-nav {
@@ -124,6 +150,14 @@
         a {
             color: white;
             text-decoration: none;
+        }
+    }
+}
+
+@media (min-width: 50em) {
+    .indiv-works {
+        .feat-tech {
+            display: flex;
         }
     }
 }

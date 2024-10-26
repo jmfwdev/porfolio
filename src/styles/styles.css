@@ -617,25 +617,45 @@ h6 {
   margin: 0 auto;
 }
 .indiv-works .indiv-works-logo {
-  width: 50px;
+  width: 70px;
   height: auto;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 @keyframes scaleHover {
   100% {
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
 }
 .indiv-works .indiv-works-logo:hover {
   animation: scaleHover 0.5s forwards;
 }
-.indiv-works .links .tabs:hover {
+.indiv-works .links-container {
+  max-width: 100px;
+  width: 100%;
+  margin: 3rem auto;
+}
+.indiv-works .links-container .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indiv-works .links-container a:hover {
+  animation: scaleHover 0.5s forwards;
+}
+.indiv-works .links-container img {
+  width: 30px;
+  height: auto;
+}
+.indiv-works .links-container a {
+  margin: 0.5rem;
+}
+.indiv-works .links-container .tabs:hover {
   animation: scaleHover 0.5s forwards;
   background-color: white;
 }
-.indiv-works .links .tabs:hover a {
+.indiv-works .links-container .tabs:hover a {
   color: rgb(50, 0, 0);
 }
 .indiv-works .home-nav {
@@ -718,6 +738,11 @@ h6 {
   text-decoration: none;
 }
 
+@media (min-width: 50em) {
+  .indiv-works .feat-tech {
+    display: flex;
+  }
+}
 .about-container {
   display: flex;
   flex-direction: column;
