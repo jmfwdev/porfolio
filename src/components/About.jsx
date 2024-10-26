@@ -40,7 +40,7 @@ return (
 
         <div className="skills">
 
-            <h2>Developing Tools</h2>
+            <h3>Developing Tools</h3>
 
                 <div className="skill-container developer-container">
                     <div className='indiv-skill-container'>
@@ -90,7 +90,7 @@ return (
 
                 </div>
 
-            <h2>Designing Tools</h2>
+            <h3>Designing Tools</h3>
 
                 <div className="skill-container designer-container">
                     <div className="indiv-skill-container">

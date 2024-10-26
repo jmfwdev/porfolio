@@ -725,9 +725,12 @@ h6 {
   margin: 1rem;
   max-width: 31.25rem;
 }
-.about-container h2,
+.about-container h3,
 .about-container p {
   color: white;
+}
+.about-container h3 {
+  margin: 1rem;
 }
 .about-container .title h2 {
   text-align: center;
