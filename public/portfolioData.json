@@ -13,6 +13,11 @@
                     "name": "JSON File",
                     "about": "Custom JSON file storing all the relevent data for my portfolio.",
                     "reflection": "I created a custom JSON file to store all of the data that I put out in my portfolio. This made my data easily accesible and I can output it however I want"
+                },
+                {
+                    "name": "Animate.css",
+                    "about": "A React library of css animation by Daniel Eden. https://animate.style/",
+                    "reflection": "This library is really useful because I was able to input quick and easy animations"
                 }
             ],
             "id": "portfolio",
