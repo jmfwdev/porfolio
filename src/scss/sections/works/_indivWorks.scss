@@ -13,14 +13,22 @@
         right: 1rem;
     }
 
-    @keyframes logoHover {
+    @keyframes scaleHover {
         100% {
             transform: scale(1.1);
         }
     }
 
     .indiv-works-logo:hover {
-        animation: logoHover 0.5s forwards;
+        animation: scaleHover 0.5s forwards;
+    }
+
+    .links .tabs:hover {
+        animation: scaleHover 0.5s forwards;
+        background-color: white;
+        a {
+            color: rgb(50, 0, 0);
+        }
     }
 
     .home-nav {
@@ -99,11 +107,6 @@
         z-index: -1;
         filter: blur(.5rem) brightness(.3);
         box-shadow: 5px 5px 15px #000;
-    }
-
-    .coding-tech-title,
-    .design-tech-title {
-        font-size: 1.5rem;
     }
 
     ul {
