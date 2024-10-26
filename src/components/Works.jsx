@@ -25,7 +25,9 @@ function Works() {
 
         <>
         <div className="works-container" id="works">
-            <h2>WORKS/&gt;</h2>
+            <ScrollAnimation animateIn='bounceInDown'>
+              <h2>WORKS/&gt;</h2>
+            </ScrollAnimation>
             {portfolioData.works.map ((work) => (
               <article 
               className={`${work.name} works-link`}

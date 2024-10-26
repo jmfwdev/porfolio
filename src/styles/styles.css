@@ -729,8 +729,9 @@ h6 {
 .about-container p {
   color: white;
 }
-.about-container h2 {
+.about-container .title h2 {
   text-align: center;
+  color: white;
 }
 .about-container .portfolio-img {
   width: 200px;

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-
-
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function About () {
     const [portfolioData, setPortfolioData] = useState(null);
@@ -26,7 +24,12 @@ return (
     <>
     
     <section className="about-container" id="about">
-        <h2 className='title'>About me/&gt;</h2>
+        <ScrollAnimation 
+            animateIn="bounceInDown"
+            className='title'    
+        >
+            <h2>About me/&gt;</h2>
+        </ScrollAnimation>
 
         <img    src="/assets/images/portfolio-image.jpeg" 
                 alt="JM's picture"
