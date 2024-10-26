@@ -116,7 +116,7 @@ function WorksPage() {
             <div className='coming-soon-container'>
 
             <img
-                src={`/assets/icons/logo.svg?url`}
+                src="/assets/icons/logo.svg"
                 alt={work.name}
                 className={`indiv-work-image`}
             />

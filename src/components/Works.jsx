@@ -69,7 +69,7 @@ function Works() {
               >
                     <ScrollAnimation animateIn='fadeIn'>
                       <img 
-                          src="/assets/icons/logo.svg?url" 
+                          src="/assets/icons/logo.svg" 
                           alt="placeholder-background"
                           className='placeholder-background' 
                       />
