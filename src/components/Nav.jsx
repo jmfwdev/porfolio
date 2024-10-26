@@ -130,9 +130,9 @@ function Nav() {
             <div className='navigation'>
                 <nav>
                     <ul>
-                        <li className='works'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#works'); }}>Works</a></li>
-                        <li className='about'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#about'); }}>About</a></li>
-                        <li className='contact'><a href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#contact'); }}>Contact</a></li>
+                        <li className='works'><a aria-label='To Works Section' href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#works'); }}>Works</a></li>
+                        <li className='about'><a aria-label='To About Section' href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#about'); }}>About</a></li>
+                        <li className='contact'><a aria-label='To Contact Section' href="#" onClick={(e) => { e.preventDefault(); smoothScroll('#contact'); }}>Contact</a></li>
                     </ul>
                 </nav>
             </div>

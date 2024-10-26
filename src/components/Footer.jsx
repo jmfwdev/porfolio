@@ -23,7 +23,7 @@ function Footer () {
 
         <>
         <footer id="contact">
-            <img className="footer-logo" src='/assets/icons/logo.svg' alt="" />
+            <img className="footer-logo" src='/assets/icons/logo.svg' alt="logo" />
 
             <h2>Contact Me/&gt;</h2>
 
@@ -38,12 +38,12 @@ function Footer () {
             </ul>
             <div className="socials-container">
 
-                <a href="https://github.com/jmfwdev">
-                    <img src='/assets/icons/github.svg' alt="" />
+                <a aria-label='Link to my Github account' href="https://github.com/jmfwdev">
+                    <img src='/assets/icons/github.svg' alt="github icon" />
                 </a>
 
-                <a href="https://www.linkedin.com/in/jan-marc-hore-724335332">
-                    <img src='/assets/icons/linkedin.svg' alt="" />
+                <a aria-label='Link to my linked-in page' href="https://www.linkedin.com/in/jan-marc-hore-724335332">
+                    <img src='/assets/icons/linkedin.svg' alt="linkedin icon" />
                 </a>
 
             </div>

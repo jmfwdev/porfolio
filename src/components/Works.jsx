@@ -59,7 +59,7 @@ function Works() {
                     <Link to={`/works/${work.id}`}>
                       <ScrollAnimation animateIn='fadeIn'>
 
-                          <p className='button read-more'>Read More</p>
+                          <p role='button' aria-label='read more' className='button read-more'>Read More</p>
 
                       </ScrollAnimation>
                     </Link>
@@ -89,7 +89,7 @@ function Works() {
                     <Link to={`/works/${work.id}`}>
                       <ScrollAnimation animateIn='fadeIn'>
 
-                      <p className='button'>Coming Soon!</p>
+                      <p role='button' aria-label='Coming Soon label' className='button'>Coming Soon!</p>
 
                       </ScrollAnimation>
                     </Link>

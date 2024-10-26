@@ -110,13 +110,13 @@ function WorksPage() {
                 <div className='links-container'>
                     <div className='link'>
                     {work.url && (
-                        <a href={work.url}>
-                            <img src="/assets/icons/web.svg" alt="" />
+                        <a aria-label={`Link to the website of ${work.name}`} href={work.url}>
+                            <img src="/assets/icons/web.svg" alt="web icon" />
                         </a>
                     )}
                     {work.github && (
-                        <a href={work.github}>
-                            <img src="/assets/icons/github.svg" alt="" />
+                        <a aria-label={`Link to the GitHub repository of ${work.name}`} href={work.github}>
+                            <img src="/assets/icons/github.svg" alt="github icon" />
                         </a>
                     )}
                     </div>
@@ -128,6 +128,7 @@ function WorksPage() {
             <div className='coming-soon-container'>
 
             <img
+                aria-label='Logo'
                 src="/assets/icons/logo.svg"
                 alt={work.name}
                 className={`indiv-work-image`}
