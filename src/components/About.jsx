@@ -42,6 +42,8 @@ return (
 
             <h3>Developing Tools</h3>
 
+                <ScrollAnimation animateIn='fadeInLeft'>
+
                 <div className="skill-container developer-container">
                     <div className='indiv-skill-container'>
                         <img src="/assets/icons/vscode.svg" alt="vscode icon" />
@@ -89,8 +91,10 @@ return (
                     </div>
 
                 </div>
+                </ScrollAnimation>
 
             <h3>Designing Tools</h3>
+                <ScrollAnimation animateIn='fadeInLeft'>
 
                 <div className="skill-container designer-container">
                     <div className="indiv-skill-container">
@@ -111,6 +115,8 @@ return (
                     </div>
 
                 </div>
+
+                </ScrollAnimation>
 
         </div>
     </section>
