@@ -28,7 +28,11 @@ import backgroundImage from "/assets/images/background.png";
               alt="Background Image" 
               className='background-image'
             />
-            <h1>{portfolioData.about.name}</h1>
+            <h1
+              data-text={portfolioData.about.name}
+            >
+              {portfolioData.about.name}
+            </h1>
             <p className='about'>{portfolioData.about.title}</p>
             <img className="arrow-down" src={arrowDown} alt="" />
           </div>
