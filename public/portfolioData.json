@@ -77,9 +77,28 @@
         {
             "name": "Capstone Project",
             "overview": "Woocommerce website about a fictional company called, Pacific Peak Adventures, selling tour packages available in British Columbia, Canada.",
+            "features": [
+                {
+                    "name": "WooCommerce",
+                    "about": "WooCommerce plugin for wordpress to display products, in this case tour packages.",
+                    "reflection": "The plugin makes it easy to put custom and default content for each product to give it a default look whilest others have custom parts."
+                }
+            ],
             "id": "capstone-project",
+            "url": "https://jmfw.dev/capstone",
+            "coding": [
+                {
+                    "name": "PhP"
+                },
+                {
+                    "name": "Sass"
+                },
+                {
+                    "name": "MySql" 
+                }
+            ],
+            "available": true,
             "backdrop": false,
-            "available": false,
             "github": ""
         }
     ],
