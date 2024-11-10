@@ -1,9 +1,10 @@
-import React from "react";
+import { useEffect } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Home from "../pages/PageHome";
 import Footer from '../components/Footer';
 import WorksPage from "../pages/PageIndividualWorks";
+
 
 function AppRouter () {
 

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import arrowDown from "/assets/icons/arrow-down.svg";
-import backgroundImage from "/assets/images/background.png";
+import VantaEffect from './VantaEffect';
+
 
     function Intro() {
         const [portfolioData, setPortfolioData] = useState(null);
@@ -23,11 +24,7 @@ import backgroundImage from "/assets/images/background.png";
         
         <>
           <div className='intro' id='home'>
-            <img 
-              src={backgroundImage} 
-              alt="Background Image" 
-              className='background-image'
-            />
+            < VantaEffect />
             <h1
               data-text={portfolioData.about.name}
             >

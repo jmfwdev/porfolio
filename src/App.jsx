@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import AppRouter from './routers/AppRouter';
 
 // styles & scripts
