@@ -904,34 +904,40 @@ h6 {
     clip: rect(54px, 9999px, 90px, 0);
   }
 }
-.about-container .portfolio-img {
+.about-container .about-desc-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about-container .about-desc-container .portfolio-img {
   width: 200px;
   height: auto;
   box-shadow: 5px 5px 15px #000;
 }
-.about-container .skills {
+.about-container .about-desc-container .skills {
   margin-top: 3rem;
 }
-.about-container .skill-container {
+.about-container .about-desc-container .skill-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.about-container .skill-container img {
+.about-container .about-desc-container .skill-container img {
   width: 50px;
   height: auto;
 }
-.about-container .skill-container .indiv-skill-container {
+.about-container .about-desc-container .skill-container .indiv-skill-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 10rem;
 }
-.about-container .skill-container .indiv-skill-container:hover {
+.about-container .about-desc-container .skill-container .indiv-skill-container:hover {
   transform: scale(1.2);
 }
-.about-container img {
+.about-container .about-desc-container img {
   margin: 1rem;
 }
 
