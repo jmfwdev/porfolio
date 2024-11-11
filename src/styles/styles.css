@@ -425,7 +425,16 @@ h6 {
   right: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0.3;
+}
+.intro .vanta-effect::after {
+  content: "";
+  position: inherit;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(10, 10, 10));
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  z-index: 10;
 }
 .intro .about {
   color: white;
