@@ -218,7 +218,10 @@
 
         .about-desc-container {
             display: grid;
-            grid-template-columns: auto;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: auto;
             grid-template-areas: 
                   " img desc "
                   " skills skills"
