@@ -23,7 +23,7 @@
     }
 
     h1::after {
-        content: "JM Hore";
+        content: attr(data-text);
         display: flex;
         transform: rotateX(180deg);
         background-image: 

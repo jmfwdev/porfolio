@@ -414,7 +414,7 @@ h6 {
   }
 }
 .intro h1::after {
-  content: "JM Hore";
+  content: attr(data-text);
   display: flex;
   transform: rotateX(180deg);
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.5));
