@@ -40,7 +40,6 @@ function Works() {
               <Link 
                   to={`/works/${work.id}`}
               >
-                    {/* <ScrollAnimation animateIn='fadeIn'> */}
                     <div className='work-image-container'>
 
                       <img
@@ -51,54 +50,35 @@ function Works() {
                       <div className='work-image-overlay'></div>
 
                     </div>
-                    {/* </ScrollAnimation> */}
 
-                {/* <ScrollAnimation animateIn='fadeInLeft'> */}
 
                   <h3>{work.name}</h3>
-                  {/* <p>{work.overview}</p> */}
                   
-                {/* </ScrollAnimation> */}
 
                   </Link>
-              
-                    <Link to={`/works/${work.id}`}>
-                      {/* <ScrollAnimation animateIn='fadeIn'> */}
-
-                          {/* <p role='button' aria-label='read more' className='button read-more'>Read More</p> */}
-
-                      {/* </ScrollAnimation> */}
-                    </Link>
                     </div>
                   ) : (
                     <div>
                       <Link 
                   to={`/works/${work.id}`}
               >
-                    {/* <ScrollAnimation animateIn='fadeIn'> */}
+
+                    <div className='work-image-container'>
+
                       <img 
                           src="/assets/icons/logo.svg" 
                           alt="placeholder-background"
                           className='placeholder-background' 
                       />
-                    {/* </ScrollAnimation> */}
+                      <div className='work-image-overlay'></div>
+                    </div>
 
-                {/* <ScrollAnimation animateIn='fadeInLeft'> */}
+
 
                   <h3>{work.name}</h3>
-                  <p>{work.overview}</p>
                   
-                {/* </ScrollAnimation> */}
 
                   </Link>
-              
-                    <Link to={`/works/${work.id}`}>
-                      {/* <ScrollAnimation animateIn='fadeIn'> */}
-
-                      <p role='button' aria-label='Coming Soon label' className='button'>Coming Soon!</p>
-
-                      {/* </ScrollAnimation> */}
-                    </Link>
                     </div>
                 )}
                 </article>
