@@ -24,10 +24,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         h2 {
             color: white;
-            font-size: 7rem;
+            font-size: 2rem;
             position: relative;
+        }
+
+        @media (min-width: 38.75rem) {
+          h2 {
+            font-size: 7rem;
+          }
         }
 
         h2::after, h2::before {

@@ -13,9 +13,16 @@
       height: 50vh;
       width: 80%;
       border-bottom: 2px solid rgb(60, 56, 173);
+
     h2 {
         position: relative;
+        font-size: 2rem;
+    }
+
+    @media (min-width: 38.75rem) {
+      h2 {
         font-size: 7rem;
+      }
     }
 
     h2::after, h2::before {
