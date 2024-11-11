@@ -24,12 +24,9 @@ return (
     <>
     
     <section className="about-container" id="about">
-        <ScrollAnimation 
-            animateIn="bounceInDown"
-            className='title'    
-        >
-            <h2>About me/&gt;</h2>
-        </ScrollAnimation>
+        <div className='about-header'>
+            <h2>ABOUT ME/&gt;</h2>
+        </div>
 
         <img    src="/assets/images/portfolio-image.jpeg" 
                 alt="JM's picture"

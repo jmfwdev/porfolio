@@ -800,9 +800,109 @@ h6 {
 .about-container h3 {
   margin: 1rem;
 }
-.about-container .title h2 {
-  text-align: center;
+.about-container .about-header {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-container .about-header h2 {
   color: white;
+  font-size: 7rem;
+  position: relative;
+}
+.about-container .about-header h2::after, .about-container .about-header h2::before {
+  content: "ABOUT ME/>";
+  position: absolute;
+  top: 0;
+  color: white;
+  background-color: rgb(10, 10, 10);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+  font-size: inherit; /* Ensures font-size is the same as the parent */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animate-glitch 3s infinite linear alternate-reverse;
+}
+.about-container .about-header h2::after {
+  left: 10px;
+  text-shadow: -10px 0 red;
+  z-index: 1;
+  opacity: 0.8;
+}
+.about-container .about-header h2::before {
+  left: -10px;
+  text-shadow: 10px 0 blue;
+  z-index: 1;
+  opacity: 0.8;
+}
+@keyframes animate-glitch {
+  0% {
+    clip: rect(99px, 9999px, 45px, 0);
+  }
+  5% {
+    clip: rect(7px, 9999px, 49px, 0);
+  }
+  10% {
+    clip: rect(52px, 9999px, 79px, 0);
+  }
+  15% {
+    clip: rect(51px, 9999px, 42px, 0);
+  }
+  20% {
+    clip: rect(37px, 9999px, 43px, 0);
+  }
+  25% {
+    clip: rect(38px, 9999px, 9px, 0);
+  }
+  30% {
+    clip: rect(34px, 9999px, 93px, 0);
+  }
+  35% {
+    clip: rect(18px, 9999px, 84px, 0);
+  }
+  40% {
+    clip: rect(100px, 9999px, 75px, 0);
+  }
+  45% {
+    clip: rect(15px, 9999px, 4px, 0);
+  }
+  50% {
+    clip: rect(14px, 9999px, 10px, 0);
+  }
+  55% {
+    clip: rect(4px, 9999px, 75px, 0);
+  }
+  60% {
+    clip: rect(17px, 9999px, 55px, 0);
+  }
+  65% {
+    clip: rect(75px, 9999px, 57px, 0);
+  }
+  70% {
+    clip: rect(39px, 9999px, 84px, 0);
+  }
+  75% {
+    clip: rect(96px, 9999px, 54px, 0);
+  }
+  80% {
+    clip: rect(45px, 9999px, 25px, 0);
+  }
+  85% {
+    clip: rect(60px, 9999px, 100px, 0);
+  }
+  90% {
+    clip: rect(5px, 9999px, 6px, 0);
+  }
+  95% {
+    clip: rect(49px, 9999px, 57px, 0);
+  }
+  100% {
+    clip: rect(54px, 9999px, 90px, 0);
+  }
 }
 .about-container .portfolio-img {
   width: 200px;
@@ -839,9 +939,6 @@ h6 {
   .about-container {
     margin: 3rem auto;
     max-width: 50rem;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: "title title" "image desc" "skills skills";
   }
   .about-container .title {
     grid-area: title;
