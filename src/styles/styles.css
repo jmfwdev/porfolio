@@ -448,6 +448,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   margin: 0.5rem;
+  text-align: center;
 }
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
