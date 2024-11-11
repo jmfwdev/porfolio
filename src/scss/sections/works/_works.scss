@@ -124,19 +124,65 @@
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        position: absolute;
+        left: -3rem;
+        top: 0;
+        z-index: 3;
     }
 
     article {
+      width: 60vw;
+      height: 15rem;
+      margin-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-        margin: 5rem auto;
-        max-width: 31.25rem;
-        padding: 1rem;
+      div {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    
+          .work-image {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              z-index: -1;
+              box-shadow: 5px 5px 15px #000;
+              border-radius: 2rem;
+          }
+      
+          .work-image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(315deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%);
+            width: 100%;
+            height: 100%;
+          }
+        }
 
         p {
             color: white
-        };
-    }
+        }
+      }
+
+      article::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 5rem;
+        top: -5rem;
+        background-color: rgb(60, 56, 173);
+      }
+
 
     .button,
     .read-more {
@@ -163,26 +209,6 @@
         }
     }
 
-    .works-link {
-        width: 80%;
-        max-width: 31.25rem;
-    }
-
-    .works-link:hover {
-        animation: worksHover 0.5s forwards;
-    }
-
-    .work-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        filter: blur(.05rem) brightness(.3);
-        box-shadow: 5px 5px 15px #000;
-    }
 
     .placeholder-background {
         position: absolute;

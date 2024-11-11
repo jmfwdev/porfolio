@@ -32,36 +32,42 @@ function Works() {
               <article 
               className={`${work.name} works-link`}
               key={work.name}
-              style={{position: "relative"}}>
+              style={{position: "relative"}}
+              >
 
               {work.available ? (
                 <div>
               <Link 
                   to={`/works/${work.id}`}
               >
-                    <ScrollAnimation animateIn='fadeIn'>
+                    {/* <ScrollAnimation animateIn='fadeIn'> */}
+                    <div className='work-image-container'>
+
                       <img
                           src={`/assets/images/${work.id}.png`}
                           alt={work.name}
                           className={`work-image ${work.id}`}
                       />
-                    </ScrollAnimation>
+                      <div className='work-image-overlay'></div>
 
-                <ScrollAnimation animateIn='fadeInLeft'>
+                    </div>
+                    {/* </ScrollAnimation> */}
+
+                {/* <ScrollAnimation animateIn='fadeInLeft'> */}
 
                   <h3>{work.name}</h3>
-                  <p>{work.overview}</p>
+                  {/* <p>{work.overview}</p> */}
                   
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
 
                   </Link>
               
                     <Link to={`/works/${work.id}`}>
-                      <ScrollAnimation animateIn='fadeIn'>
+                      {/* <ScrollAnimation animateIn='fadeIn'> */}
 
-                          <p role='button' aria-label='read more' className='button read-more'>Read More</p>
+                          {/* <p role='button' aria-label='read more' className='button read-more'>Read More</p> */}
 
-                      </ScrollAnimation>
+                      {/* </ScrollAnimation> */}
                     </Link>
                     </div>
                   ) : (
@@ -69,29 +75,29 @@ function Works() {
                       <Link 
                   to={`/works/${work.id}`}
               >
-                    <ScrollAnimation animateIn='fadeIn'>
+                    {/* <ScrollAnimation animateIn='fadeIn'> */}
                       <img 
                           src="/assets/icons/logo.svg" 
                           alt="placeholder-background"
                           className='placeholder-background' 
                       />
-                    </ScrollAnimation>
+                    {/* </ScrollAnimation> */}
 
-                <ScrollAnimation animateIn='fadeInLeft'>
+                {/* <ScrollAnimation animateIn='fadeInLeft'> */}
 
                   <h3>{work.name}</h3>
                   <p>{work.overview}</p>
                   
-                </ScrollAnimation>
+                {/* </ScrollAnimation> */}
 
                   </Link>
               
                     <Link to={`/works/${work.id}`}>
-                      <ScrollAnimation animateIn='fadeIn'>
+                      {/* <ScrollAnimation animateIn='fadeIn'> */}
 
                       <p role='button' aria-label='Coming Soon label' className='button'>Coming Soon!</p>
 
-                      </ScrollAnimation>
+                      {/* </ScrollAnimation> */}
                     </Link>
                     </div>
                 )}
