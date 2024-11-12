@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import FOG from '../../node_modules/vanta/src/vanta.fog';
+import FOG from 'vanta/src/vanta.fog';
 
 
-function VantaEffect() {
+function VantaEffectIntro () {
 
     useEffect(() => {
         FOG ({
@@ -26,4 +26,4 @@ function VantaEffect() {
     )
 }
 
-export default VantaEffect;
+export default VantaEffectIntro;

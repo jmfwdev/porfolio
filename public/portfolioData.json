@@ -7,7 +7,7 @@
     "works": [
         {
             "name": "Portfolio",
-            "overview": "Portfolio built primarly using React JS featuring different works and technology",
+            "overview": "Portfolio built primarly using React JS and Javascript Libraries. It features my works and techs I'm experienced in.",
             "features": [
                 {
                     "name": "JSON File",

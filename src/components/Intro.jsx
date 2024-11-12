@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import arrowDown from "/assets/icons/arrow-down.svg";
-import VantaEffect from './VantaEffect';
+import VantaEffect from './VantaEffectIntro';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
