@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Logo from "../../public/assets/icons/logo.svg";
-import VantaWorks from "../components/VantaEffectWorks";
+// import VantaWorks from "../components/VantaEffectWorks";
 
 function WorksPage() {
     const { id } = useParams(); // Get the id from the URL
@@ -39,7 +39,7 @@ function WorksPage() {
     return (
         <main className='indiv-works'>
 
-        <VantaWorks />
+        {/* <VantaWorks /> */}
 
         <Link to="/">
             <img
