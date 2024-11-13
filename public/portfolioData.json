@@ -16,8 +16,13 @@
                 },
                 {
                     "name": "Animate.css",
-                    "about": "A React library of css animation by Daniel Eden. https://animate.style/",
+                    "about": "A React library of css animation by Daniel Eden.",
                     "reflection": "This library is really useful because I was able to input quick and easy animations"
+                },
+                {
+                    "name": "Vanta.js",
+                    "about": "Javascript library of animated and interactable background by strinkingly.com",
+                    "reflection": "This library made is easier to add interactivity and appealing background to my website."
                 }
             ],
             "id": "portfolio",

@@ -150,7 +150,7 @@ function WorksPage() {
 
                 >COMING SOON!</p>
             </div>
-        )};
+        )}
 
         </main>
     );

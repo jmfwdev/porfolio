@@ -1,0 +1,26 @@
+
+.loading-page {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .loading-bar {
+        background-color: white;
+        height: 2px;
+        width: 0%;
+        animation: loading 3s forwards;
+    }
+
+    @keyframes loading {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 15%;
+        }
+    }
+}
