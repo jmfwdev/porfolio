@@ -7,6 +7,11 @@ function WorksPage() {
     const { id } = useParams(); // Get the id from the URL
     const [portfolioData, setPortfolioData] = useState(null);
     const [work, setWork] = useState(null);
+    const [activeTab, setActiveTab] = useState(0);
+
+    function handleTabClick (index) {
+        setActiveTab(index);
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -46,87 +51,114 @@ function WorksPage() {
         {work.available ? (
         <div>
 
-        {/* <img
-            src={`/assets/images/${work.id}.png`}
-            alt={work.name}
-            className={`indiv-work-image ${work.id}`}
-        /> */}
-
-        <div className="work-details">
-            <h1>{work.name}</h1>
-        </div>
+            <div className="work-details">
+                <h1>{work.name}</h1>
+            </div>
 
         <div className="tabs-container">
             <div className='tab-nav'>
-                <section>
-                    <h2 className="tabs">Overview</h2>
-                    <p>{work.overview}</p>
-                </section>
 
-                <div className='feat-tech'>
+                <div className='tab-buttons-container'>
+                    <ul>
+                        <li className={`tab-button ${activeTab === 0 ? 'active' : ''}`} 
+                            onClick={() => handleTabClick(0)}>
+                                Overview
+                        </li>
+                        <li className={`tab-button ${activeTab === 1 ? 'active' : ''}`} 
+                            onClick={() => handleTabClick(1)}>
+                                Features
+                        </li>
+                        <li className={`tab-button ${activeTab === 2 ? 'active' : ''}`} 
+                            onClick={() => handleTabClick(2)}>
+                                Techs
+                        </li>
+                    </ul>
+                </div>
 
-                <section>
-                    <h2 className="tabs">Features</h2>
-                        {work.features.map ((feat) => (
-                            <div>
-                                <h3 className='feat-name'>{feat.name}</h3>
-                                <h4>About</h4>
-                                <p className='feat-about'>{feat.about}</p>
-                                <h4>Reflection</h4>
-                                <p className='feat-reflect'>{feat.reflection}</p>
-                            </div>
-                        ))}
-                </section>
+                <div className='tab-content'>
+                    { activeTab === 0 && (
+                        <div className='overview'>
+                            <section>
+                                <h2 className="tabs">Overview</h2>
+                                <p>{work.overview}</p>
+                            </section>
+                        </div>
+                    )}
 
-                <section>
-                    <h2 className="tabs">Techs</h2>
-                        {work.coding && (
-                            <div>
-                                <h3 className='coding-tech-title'>Coding</h3>
-                                <ul>
-                                    {work.coding.map ((codeTech) => (
-                                        <li 
-                                            key={codeTech.name}
-                                            className='techs'
-                                        >{codeTech.name}</li>
+                    { activeTab === 1 && (
+                        <div className='feat'>
+                            <section>
+                                <h2 className="tabs">Features</h2>
+                                    {work.features.map ((feat) => (
+                                        <div>
+                                            <h3 className='feat-name'>{feat.name}</h3>
+                                            <h4>About</h4>
+                                            <p className='feat-about'>{feat.about}</p>
+                                            <h4>Reflection</h4>
+                                            <p className='feat-reflect'>{feat.reflection}</p>
+                                        </div>
                                     ))}
-                                </ul>
-                            </div>
-                        )}
+                            </section>
+                        </div>
+                    )}
 
-                            {work.designing && (
-                            <div>
-                                <h3 className='design-tech-title'>Designing</h3>
-                                <ul>
-                                        {work.designing.map ((designTech) => (
-                                            <li
-                                                key={designTech.name}
-                                                className='techs'
-                                            >{designTech.name}</li>
-                                        ))}
-                                </ul>
-                            </div>
-                            )}
-                </section>
+                    { activeTab === 2 && (
+                        <div className='tech'>
+                            <section>
+                                <h2 className="tabs">Techs</h2>
+                                    {work.coding && (
+                                        <div>
+                                            <h3 className='coding-tech-title'>Coding</h3>
+                                            <ul>
+                                                {work.coding.map ((codeTech) => (
+                                                    <li 
+                                                        key={codeTech.name}
+                                                        className='techs'
+                                                    >{codeTech.name}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+
+                                        {work.designing && (
+                                        <div>
+                                            <h3 className='design-tech-title'>Designing</h3>
+                                            <ul>
+                                                    {work.designing.map ((designTech) => (
+                                                        <li
+                                                            key={designTech.name}
+                                                            className='techs'
+                                                        >{designTech.name}</li>
+                                                    ))}
+                                            </ul>
+                                        </div>
+                                        )}
+                            </section>
+                        </div>
+                    )}
+
 
                 </div>
 
-                <div className='links-container'>
-                    <div className='link'>
-                    {work.url && (
-                        <a aria-label={`Link to the website of ${work.name}`} href={work.url}>
-                            <img src="/assets/icons/web.svg" alt="web icon" />
-                        </a>
-                    )}
-                    {work.github && (
-                        <a aria-label={`Link to the GitHub repository of ${work.name}`} href={work.github}>
-                            <img src="/assets/icons/github.svg" alt="github icon" />
-                        </a>
-                    )}
-                    </div>
-                </div>
+
             </div>
         </div>
+
+            <div className='links-container'>
+                <div className='link'>
+                {work.url && (
+                    <a aria-label={`Link to the website of ${work.name}`} href={work.url}>
+                        <img src="/assets/icons/web.svg" alt="web icon" />
+                    </a>
+                )}
+                {work.github && (
+                    <a aria-label={`Link to the GitHub repository of ${work.name}`} href={work.github}>
+                        <img src="/assets/icons/github.svg" alt="github icon" />
+                    </a>
+                )}
+                </div>
+            </div>
+
         </div>
         ) : (
             <div className='coming-soon-container'>

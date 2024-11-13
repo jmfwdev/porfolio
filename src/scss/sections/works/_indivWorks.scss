@@ -116,6 +116,22 @@
         max-width: 40rem;
         text-align: center;
 
+        .tab-buttons-container {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .tab-button {
+                    background-color: white;
+                    color: black;
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    font-size: 18px;
+                }
+            }
+        }
+
         section {
             display: flex;
             align-items: center;

@@ -805,6 +805,18 @@ h6 {
   max-width: 40rem;
   text-align: center;
 }
+.indiv-works .tab-nav .tab-buttons-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.indiv-works .tab-nav .tab-buttons-container ul .tab-button {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 18px;
+}
 .indiv-works .tab-nav section {
   display: flex;
   align-items: center;
