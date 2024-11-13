@@ -120,7 +120,7 @@
             ul {
                 display: flex;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: center;
 
                 .tab-button {
                     background-color: white;
@@ -128,6 +128,8 @@
                     padding: 1rem;
                     border-radius: 0.5rem;
                     font-size: 18px;
+                    margin: 3rem;
+                    width: 5rem;
                 }
             }
         }

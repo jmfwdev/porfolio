@@ -808,7 +808,7 @@ h6 {
 .indiv-works .tab-nav .tab-buttons-container ul {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .indiv-works .tab-nav .tab-buttons-container ul .tab-button {
   background-color: white;
@@ -816,6 +816,8 @@ h6 {
   padding: 1rem;
   border-radius: 0.5rem;
   font-size: 18px;
+  margin: 3rem;
+  width: 5rem;
 }
 .indiv-works .tab-nav section {
   display: flex;
