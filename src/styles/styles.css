@@ -431,10 +431,28 @@ h6 {
   font-size: 5rem;
   margin: 0;
   position: relative;
+  animation: h1animation 3s forwards;
+}
+@keyframes h1animation {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 5rem;
+  }
 }
 @media (min-width: 38.75rem) {
   .intro h1 {
     font-size: 10rem;
+    animation: h1animationDesktop 3s forwards;
+  }
+  @keyframes h1animationDesktop {
+    0% {
+      font-size: 0;
+    }
+    100% {
+      font-size: 10rem;
+    }
   }
 }
 .intro h1::after {
