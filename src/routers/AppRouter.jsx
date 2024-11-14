@@ -18,7 +18,7 @@ function AppRouter () {
 
     return (
         <BrowserRouter basename="/">
-            {/* <Routes>
+            <Routes>
                 { loading ? (
                     <>
                     <Route path="/" element={<LoadingPage />} />
@@ -29,10 +29,6 @@ function AppRouter () {
                     < Route path="/works/:id" element={< WorksPage />} />
                     </>
                 )}
-            </Routes> */}
-            <Routes>
-                < Route path="/" exact element={< Home />} />
-                < Route path="/works/:id" element={< WorksPage />} />
             </Routes>
             < Footer />
         </BrowserRouter>
