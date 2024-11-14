@@ -1,11 +1,14 @@
 .indiv-works {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    overflow-y: scroll hidden;
-    min-height: 100vh;
     width: 100vw;
+    height: 100vh;
+
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
 
     .vantaWorks {
         position: absolute;
@@ -37,9 +40,11 @@
     }
 
     .links-container {
-        max-width: 100px;
         width: 100%;
-        margin: 3rem auto;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .link {
             display: flex;
@@ -76,14 +81,14 @@
     }
 
     .work-details {
-
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
         h1 {
-            margin-top: 4rem;
-        }
-        h1,
-        p {
+            margin: 0;
             color: white;
-            text-align: center;
         }
     }
 
@@ -102,44 +107,81 @@
 
     .tabs-container {
         color: white;
-        margin: 5rem auto;
         width: 100%;
-        max-width: 62.5rem;
+        height: 70%;
     }
 
     .tab-nav {
         display: flex;
-        margin: 0 auto;
-        justify-content: center;
+        margin: 0 3rem;
+        justify-content: flex-start;
         flex-direction: column;
-        width: 100%;
-        max-width: 40rem;
         text-align: center;
+        height: 100%;
+        width: 100%;
+        max-width: 50rem;
+
+        .tab-content {
+            height: 85%;
+            overflow: scroll;
+            background-color: #222222;
+            color: white;
+
+            h2,
+            h3,
+            h4 {
+                text-shadow: none;
+                color: white;
+            }
+        }
 
         .tab-buttons-container {
+            height: 15%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            color: black;
+            background-color: transparent;
+
             ul {
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
+                margin: 0;
 
                 .tab-button {
-                    background-color: white;
-                    color: black;
+                    background-color: #000;
+                    color: #777777;
                     padding: 1rem;
-                    border-radius: 0.5rem;
                     font-size: 18px;
-                    margin: 3rem;
                     width: 5rem;
+                    margin-right: 1rem;
+                }
+
+                .tab-button.active {
+                    background-color: #222222;
+                    color: white;
                 }
             }
         }
 
-        section {
+        .content-container {
             display: flex;
-            align-items: center;
             flex-direction: column;
-            padding: 0 2rem;
+            justify-content: center;
+            align-items: center;
+            .content {
+                display: flex;
+                align-items: flex-start;
+                padding: 0 2rem;
+                overflow: scroll;
+                flex-direction: column;
+    
+                .indiv-content {
+                }
+            }
         }
+
     }
 
     .coming-soon-container {
@@ -172,16 +214,10 @@
     }
 
     .tabs {
-        background-color: rgb(50, 0, 0);
         margin: 1rem;
         padding: 1rem;
-        border-radius: 50rem;
-        box-shadow: 0px 5px 10px #000;
         width: 10rem;
-        a {
-            color: white;
-            text-decoration: none;
-        }
+        color: black;
     }
 }
 

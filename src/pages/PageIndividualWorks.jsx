@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Logo from "../../public/assets/icons/logo.svg";
-// import VantaWorks from "../components/VantaEffectWorks";
+import VantaWorks from "../components/VantaEffectWorks";
 
 function WorksPage() {
     const { id } = useParams(); // Get the id from the URL
@@ -39,7 +39,7 @@ function WorksPage() {
     return (
         <main className='indiv-works'>
 
-        {/* <VantaWorks /> */}
+        <VantaWorks />
 
         <Link to="/">
             <img
@@ -49,7 +49,7 @@ function WorksPage() {
             />
         </Link>
         {work.available ? (
-        <div>
+        <div className='work-container'>
 
             <div className="work-details">
                 <h1>{work.name}</h1>
@@ -77,20 +77,20 @@ function WorksPage() {
 
                 <div className='tab-content'>
                     { activeTab === 0 && (
-                        <div className='overview'>
-                            <section>
-                                <h2 className="tabs">Overview</h2>
+                        <div className='overview content-container'>
+                            <h2 className="tabs">Overview</h2>
+                            <section className='content'>
                                 <p>{work.overview}</p>
                             </section>
                         </div>
                     )}
 
                     { activeTab === 1 && (
-                        <div className='feat'>
-                            <section>
-                                <h2 className="tabs">Features</h2>
+                        <div className='feat content-container'>
+                            <h2 className="tabs">Features</h2>
+                            <section className='content'>
                                     {work.features.map ((feat) => (
-                                        <div>
+                                        <div className='indiv-content'>
                                             <h3 className='feat-name'>{feat.name}</h3>
                                             <h4>About</h4>
                                             <p className='feat-about'>{feat.about}</p>
@@ -103,11 +103,11 @@ function WorksPage() {
                     )}
 
                     { activeTab === 2 && (
-                        <div className='tech'>
-                            <section>
-                                <h2 className="tabs">Techs</h2>
+                        <div className='tech content-container'>
+                            <h2 className="tabs">Techs</h2>
+                            <section className='content'>
                                     {work.coding && (
-                                        <div>
+                                        <div className='indiv-content'>
                                             <h3 className='coding-tech-title'>Coding</h3>
                                             <ul>
                                                 {work.coding.map ((codeTech) => (
@@ -121,7 +121,7 @@ function WorksPage() {
                                     )}
 
                                         {work.designing && (
-                                        <div>
+                                        <div className='indiv-content'>
                                             <h3 className='design-tech-title'>Designing</h3>
                                             <ul>
                                                     {work.designing.map ((designTech) => (
@@ -165,7 +165,7 @@ function WorksPage() {
 
             <img
                 aria-label='Logo'
-                src="/assets/icons/logo.svg"
+                src="{logo}"
                 alt={work.name}
                 className={`indiv-work-image`}
             />

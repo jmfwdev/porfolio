@@ -66,7 +66,7 @@ function Works() {
                     <div className='work-image-container'>
 
                       <img 
-                          src="/assets/icons/logo.svg" 
+                          src="/assets/icons/logo.svg?url" 
                           alt="placeholder-background"
                           className='placeholder-background' 
                       />
