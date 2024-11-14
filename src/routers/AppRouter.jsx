@@ -22,7 +22,7 @@ function AppRouter () {
                 <Route path="/" element={loading ? <LoadingPage /> : <Home />} />
                 <Route path="/works/:id" element={loading ? <LoadingPage /> : <WorksPage />} />
             </Routes>
-            < Footer />
+            { !loading && < Footer />}
         </BrowserRouter>
     )
 }
