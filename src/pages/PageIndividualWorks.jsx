@@ -142,6 +142,10 @@ function WorksPage() {
 
 
             </div>
+
+            <div className="works-image">
+                <img src={`/assets/images/${work.id}.png`} alt="" />
+            </div>
         </div>
 
             <div className='links-container'>
