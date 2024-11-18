@@ -89,6 +89,7 @@
         h1 {
             margin: 0;
             color: white;
+            font-size: 4rem;
         }
     }
 
@@ -169,14 +170,22 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100%;
+
             .content {
                 display: flex;
-                align-items: flex-start;
                 padding: 0 2rem;
-                overflow: scroll;
-                flex-direction: column;
-    
+                height: 100%;
+                justify-content: space-evenly;
+
+                p {
+                    line-height: 2rem;
+                    margin: 0 auto;
+                    width: 60%;
+                }
+
                 .indiv-content {
+                    width: 50%;
                 }
             }
         }
@@ -213,10 +222,11 @@
     }
 
     .tabs {
-        margin: 1rem;
+        margin: 2rem;
         padding: 1rem;
         width: 10rem;
         color: black;
+        font-size: 2rem;
     }
 }
 

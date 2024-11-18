@@ -785,6 +785,7 @@ h6 {
 .indiv-works .work-details h1 {
   margin: 0;
   color: white;
+  font-size: 4rem;
 }
 .indiv-works .feat-about,
 .indiv-works .feat-reflect {
@@ -853,13 +854,21 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .indiv-works .tab-nav .content-container .content {
   display: flex;
-  align-items: flex-start;
   padding: 0 2rem;
-  overflow: scroll;
-  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.indiv-works .tab-nav .content-container .content p {
+  line-height: 2rem;
+  margin: 0 auto;
+  width: 60%;
+}
+.indiv-works .tab-nav .content-container .content .indiv-content {
+  width: 50%;
 }
 .indiv-works .coming-soon-container {
   height: 100vh;
@@ -886,10 +895,11 @@ h6 {
   padding: 0;
 }
 .indiv-works .tabs {
-  margin: 1rem;
+  margin: 2rem;
   padding: 1rem;
   width: 10rem;
   color: black;
+  font-size: 2rem;
 }
 
 @media (min-width: 50em) {

@@ -7,37 +7,36 @@
     "works": [
         {
             "name": "Portfolio",
-            "overview": "Portfolio built primarly using React JS and Javascript Libraries. It features my works and techs I'm experienced in.",
+            "overview": "Portfolio built primarly using React JS and Javascript Libraries, such as Vanta Js by strikingly.com. Showcasing my latest works as a certified junior web developer which includes a movie database and mockup wordpress site.",
             "features": [
                 {
                     "name": "JSON File",
-                    "about": "Custom JSON file storing all the relevent data for my portfolio.",
-                    "reflection": "I created a custom JSON file to store all of the data that I put out in my portfolio. This made my data easily accesible and I can output it however I want"
-                },
-                {
-                    "name": "Animate.css",
-                    "about": "A React library of css animation by Daniel Eden.",
-                    "reflection": "This library is really useful because I was able to input quick and easy animations"
+                    "about": "Custom JSON file containing data to be dynamically display on the website. ",
+                    "reflection": "A custom JSON file is a accessible and convenient way to store all relevant data. Using the useEffect function to grab the relevant data and display it on how I see fit. I believe it is really useful to have all the data in one file just in case if I need to add or remove content I can find it easily."
                 },
                 {
                     "name": "Vanta.js",
-                    "about": "Javascript library of animated and interactable background by strinkingly.com",
-                    "reflection": "This library made is easier to add interactivity and appealing background to my website."
+                    "about": "Javascript library of animated and interactable background, by strinkingly.com",
+                    "reflection": "This Javascript library added interactive background which adds an appeal sight to my website."
                 }
             ],
             "id": "portfolio",
             "coding": [
                 {
-                    "name": "React JS"
+                    "name": "React JS",
+                    "url": ""
                 },
                 {
-                    "name": "Sass"
+                    "name": "Sass",
+                    "url": ""
                 },
                 {
-                    "name": "Animation.css"
+                    "name": "Vanta.js",
+                    "url": ""
                 },
                 {
-                    "name": "Custom JSON File"
+                    "name": "Custom JSON File",
+                    "url": ""
                 }
             ],
             "backdrop": true,
@@ -58,21 +57,26 @@
             "url": "https://jmfw.dev/spade",
             "coding": [
                 {
-                    "name": "React JS"
+                    "name": "React JS",
+                    "url": ""
                 },
                 {
-                    "name": "Sass"
+                    "name": "Sass",
+                    "url": ""
                 },
                 {
-                    "name": "TMDB API"
+                    "name": "TMDB API",
+                    "url": ""
                 }
             ],
             "designing": [
                 {
-                    "name": "Adobe XD"
+                    "name": "Adobe XD",
+                    "url": ""
                 },
                 {
-                    "name": "Adobe Illustrator"
+                    "name": "Adobe Illustrator",
+                    "url": ""
                 }
             ],
             "backdrop": true,
@@ -93,13 +97,16 @@
             "url": "https://jmfw.dev/capstone",
             "coding": [
                 {
-                    "name": "PhP"
+                    "name": "PhP",
+                    "url": ""
                 },
                 {
-                    "name": "Sass"
+                    "name": "Sass",
+                    "url": ""
                 },
                 {
-                    "name": "MySql" 
+                    "name": "MySql",
+                    "url": ""
                 }
             ],
             "available": true,
